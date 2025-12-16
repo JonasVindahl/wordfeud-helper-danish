@@ -620,20 +620,27 @@ function scrollToResults() {
         document.activeElement.blur();
     }
 
-    // Use requestAnimationFrame to ensure layout is complete
-    requestAnimationFrame(() => {
-        const rect = elements.resultsSection.getBoundingClientRect();
-        const currentScroll = window.pageYOffset || document.documentElement.scrollTop || 0;
-        const targetPosition = rect.top + currentScroll - 20;
+    // Additional blur for mobile keyboards
+    if (document.activeElement && document.activeElement.tagName === 'INPUT') {
+        document.activeElement.blur();
+    }
 
-        try {
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        } catch (e) {
-            window.scrollTo(0, targetPosition);
-        }
+    // Use requestAnimationFrame to ensure layout is complete and blur has taken effect
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            const rect = elements.resultsSection.getBoundingClientRect();
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop || 0;
+            const targetPosition = rect.top + currentScroll - 20;
+
+            try {
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            } catch (e) {
+                window.scrollTo(0, targetPosition);
+            }
+        });
     });
 }
 
@@ -651,20 +658,27 @@ function scrollToError() {
         document.activeElement.blur();
     }
 
-    // Use requestAnimationFrame to ensure layout is complete
-    requestAnimationFrame(() => {
-        const rect = elements.errorMessage.getBoundingClientRect();
-        const currentScroll = window.pageYOffset || document.documentElement.scrollTop || 0;
-        const targetPosition = rect.top + currentScroll - 20;
+    // Additional blur for mobile keyboards
+    if (document.activeElement && document.activeElement.tagName === 'INPUT') {
+        document.activeElement.blur();
+    }
 
-        try {
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        } catch (e) {
-            window.scrollTo(0, targetPosition);
-        }
+    // Use requestAnimationFrame to ensure layout is complete and blur has taken effect
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            const rect = elements.errorMessage.getBoundingClientRect();
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop || 0;
+            const targetPosition = rect.top + currentScroll - 20;
+
+            try {
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            } catch (e) {
+                window.scrollTo(0, targetPosition);
+            }
+        });
     });
 }
 
@@ -893,10 +907,10 @@ function showError(message) {
     elements.errorMessage.textContent = message;
     elements.errorMessage.style.display = 'block';
 
-    // Scroll to show the error message
+    // Scroll to show the error message (increased delay for mobile)
     setTimeout(() => {
         scrollToError();
-    }, 100);
+    }, 200);
 }
 
 /**
