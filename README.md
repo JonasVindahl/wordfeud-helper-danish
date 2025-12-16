@@ -48,24 +48,35 @@ Live at [wordfeud.jonasvindahl.dev](https://wordfeud.jonasvindahl.dev/)
 ```
 wordfeud-helper-danish/
 ├── index.html              # Main HTML
-├── styles.css              # All styling
 ├── manifest.json           # PWA manifest
-├── service-worker.js       # Offline support
-├── searchWorker.js         # Background search
+├── robots.txt              # SEO
+├── sitemap.xml             # SEO
+├── README.md
+├── LICENSE
+├── .gitignore
+├── assets/
+│   ├── images/
+│   │   ├── og-image.svg    # Social media preview
+│   │   └── twitter-image.svg
+│   └── styles/
+│       └── styles.css      # All styling
 ├── src/
-│   ├── init.js            # Entry point
-│   ├── main.js            # App initialization
-│   ├── ui-v2.js           # UI logic (current)
-│   ├── searchEngine.js    # Word search algorithm
-│   ├── wordlistLoader.js  # Load Danish words
-│   ├── utils.js           # Helper functions
-│   └── scoring.js         # Point calculation
+│   ├── js/
+│   │   ├── init.js         # Entry point
+│   │   ├── main.js         # App initialization
+│   │   ├── ui-v2.js        # UI logic
+│   │   ├── searchEngine.js # Word search algorithm
+│   │   ├── wordlistLoader.js # Load Danish words
+│   │   ├── utils.js        # Helper functions
+│   │   └── scoring.js      # Point calculation
+│   └── workers/
+│       ├── service-worker.js # Offline support
+│       └── searchWorker.js   # Background search
 ├── public/
-│   └── words.json         # 400k+ Danish words (6MB)
-├── og-image.svg           # Social media preview
-├── twitter-image.svg      # Twitter card image
-├── robots.txt             # SEO
-└── sitemap.xml            # SEO
+│   └── words.json          # 400k+ Danish words (6MB)
+└── docs/
+    ├── SECURITY.md
+    └── CLOUDFLARE-SETUP.md
 ```
 
 ## Development
@@ -99,7 +110,7 @@ No build step required - this is a modern vanilla JavaScript application. Simply
 
 ## Security
 
-See [SECURITY.md](SECURITY.md) for details on:
+See [SECURITY.md](docs/SECURITY.md) for details on:
 - Content Security Policy (CSP)
 - CORS headers
 - XSS protection

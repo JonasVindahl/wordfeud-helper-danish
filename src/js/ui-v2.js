@@ -93,7 +93,7 @@ export function initUI() {
 function initWebWorker() {
     if (typeof Worker !== 'undefined') {
         try {
-            searchWorker = new Worker('/searchWorker.js');
+            searchWorker = new Worker('/src/workers/searchWorker.js');
 
             searchWorker.addEventListener('message', (event) => {
                 const { type, payload } = event.data;

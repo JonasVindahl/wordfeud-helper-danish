@@ -10,15 +10,15 @@ const CACHE_NAME = 'wordfeud-helper-v24-production';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
-    '/styles.css',
-    '/src/main.js',
-    '/src/init.js',
-    '/src/ui-v2.js',
-    '/src/searchEngine.js',
-    '/src/wordlistLoader.js',
-    '/src/scoring.js',
-    '/src/utils.js',
-    '/searchWorker.js',
+    '/assets/styles/styles.css',
+    '/src/js/main.js',
+    '/src/js/init.js',
+    '/src/js/ui-v2.js',
+    '/src/js/searchEngine.js',
+    '/src/js/wordlistLoader.js',
+    '/src/js/scoring.js',
+    '/src/js/utils.js',
+    '/src/workers/searchWorker.js',
     '/public/words.json'
 ];
 
