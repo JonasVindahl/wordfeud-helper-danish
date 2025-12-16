@@ -131,13 +131,39 @@ body {
     padding-bottom: 100px; /* Space for fixed install prompt */
 }
 
-/* Main content area - fixed min-height prevents CLS */
+/* Main content area - overlay loading on top of app content */
 main {
-    min-height: 500px; /* Prevent footer shift during loading → app transition */
+    position: relative;
 }
 
+/* Loading screen overlays app-content */
+#wordlist-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+    transition: opacity 0.3s ease;
+}
+
+/* Hidden state for loading screen */
+#wordlist-loading.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* App content always in normal flow - determines main height */
 #app-content {
-    min-height: 400px; /* Match loading container height */
+    position: relative;
+    z-index: 1;
+    min-height: 400px; /* Minimum height to prevent initial jank */
 }
 
 /* ========================================

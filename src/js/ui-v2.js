@@ -924,13 +924,20 @@ function hideError() {
  * Show app content (called after wordlist loads)
  */
 export function showAppContent() {
-    document.getElementById('wordlist-loading').style.display = 'none';
-    document.getElementById('app-content').style.display = 'block';
+    const loading = document.getElementById('wordlist-loading');
+
+    // Fade out loading screen instead of display: none
+    loading.classList.add('hidden');
+
+    // Remove from DOM after animation
+    setTimeout(() => {
+        loading.style.display = 'none';
+    }, 300);
 
     // Delay focus to avoid forced reflow during layout
     setTimeout(() => {
         elements.lettersInput.focus();
-    }, 50);
+    }, 350);
 }
 
 /**

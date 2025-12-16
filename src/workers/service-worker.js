@@ -3,9 +3,9 @@
  * Provides offline support by caching app resources
  */
 
-// Cache version v32 - CLS and reflow fixes
-// Updated: 2025-12-16 - Fixed CLS properly with main min-height, delayed focus
-const CACHE_NAME = 'wordfeud-helper-v32-production';
+// Cache version v33 - Fix LCP regression
+// Updated: 2025-12-16 - Use CSS Grid instead of min-height to fix CLS without blocking paint
+const CACHE_NAME = 'wordfeud-helper-v33-production';
 
 const STATIC_ASSETS = [
     '/',

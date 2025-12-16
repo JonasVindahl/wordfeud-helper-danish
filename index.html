@@ -52,8 +52,8 @@
     <meta name="twitter:description" content="Gratis dansk Wordfeud/Scrabble hjælper. Find ord med joker (?), mønster (.) og wildcard (*). Hurtig, reklamefri og mobilvenlig.">
     <meta name="twitter:image" content="https://wordfeud.jonasvindahl.dev/assets/images/twitter-image.svg">
 
-    <!-- Stylesheet - v9 with CLS fixes and contrast improvements -->
-    <link rel="stylesheet" href="assets/styles/styles.css?v=9">
+    <!-- Stylesheet - v10 with Grid-based CLS fix (no LCP regression) -->
+    <link rel="stylesheet" href="assets/styles/styles.css?v=10">
 
     <!-- JSON-LD Structured Data - WebApplication -->
     <script type="application/ld+json">
@@ -190,8 +190,8 @@
                 <p class="loading-subtext">Første gang kan tage lidt længere tid – derefter går det hurtigt.</p>
             </div>
 
-            <!-- Main App (hidden until wordlist loads) -->
-            <div id="app-content" style="display: none;">
+            <!-- Main App (behind loading screen initially) -->
+            <div id="app-content">
                 <div class="app-layout">
                     <!-- Unified Control Panel: letters + filters -->
                     <section class="control-panel ui-block" aria-labelledby="control-panel-heading">
