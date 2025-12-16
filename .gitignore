@@ -13,6 +13,14 @@ BingSiteAuth.xml
 yandex*.html
 *.verification.html
 
+# Server-specific configuration files
+.htaccess*
+.nginx*
+.apache*
+
+# Legacy/unused files
+src/ui.js
+
 # Editor directories and files
 .vscode/
 .idea/
