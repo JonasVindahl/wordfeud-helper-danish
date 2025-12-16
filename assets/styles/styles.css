@@ -67,11 +67,11 @@
     --surface-soft: #f1f5f9;
     --surface-elevated: #ffffff;
 
-    /* Text Hierarchy */
+    /* Text Hierarchy - WCAG AA compliant (4.5:1 minimum on white) */
     --text-primary: #0f172a;
     --text-secondary: #475569;
-    --text-tertiary: #64748b;
-    --text-muted: #94a3b8;
+    --text-tertiary: #475569; /* Darkened from #64748b for contrast */
+    --text-muted: #64748b; /* Darkened from #94a3b8 for contrast */
 
     /* Borders */
     --border-light: #e2e8f0;
@@ -1393,6 +1393,7 @@ code.pattern-dot {
 .loading-container {
     text-align: center;
     padding: 60px 20px 40px;
+    min-height: 400px; /* Reserve space to prevent CLS */
 }
 
 .loading-container p {
@@ -1999,6 +2000,7 @@ code {
 footer {
     text-align: center;
     padding: 20px 0 12px;
+    min-height: 120px; /* Reserve space to prevent CLS */
     color: var(--text-tertiary);
     font-size: 0.875rem;
 }
@@ -2021,9 +2023,8 @@ footer a:hover {
 #app-version {
     margin-top: 8px;
     font-size: 0.8rem;
-    opacity: 0.6;
     font-family: 'Courier New', monospace;
-    color: var(--text-tertiary);
+    color: var(--text-muted); /* Removed opacity for better contrast */
 }
 
 #version-number {

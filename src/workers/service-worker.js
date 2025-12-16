@@ -3,9 +3,9 @@
  * Provides offline support by caching app resources
  */
 
-// Cache version v30 - Fix additional CSP violation
-// Updated: 2025-12-16 - Added another missing script hash to CSP
-const CACHE_NAME = 'wordfeud-helper-v30-production';
+// Cache version v31 - Performance improvements
+// Updated: 2025-12-16 - Fixed CLS, improved contrast, optimized loading
+const CACHE_NAME = 'wordfeud-helper-v31-production';
 
 const STATIC_ASSETS = [
     '/',

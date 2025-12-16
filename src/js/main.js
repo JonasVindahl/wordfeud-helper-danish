@@ -8,7 +8,7 @@ import { initUI, showAppContent, updateLoadingProgress, showLoadingError } from 
 import { trackPWAInstalled, trackPageLoad } from './analytics.js';
 
 // App version - synced with service worker cache name
-export const APP_VERSION = 'v30';
+export const APP_VERSION = 'v31';
 export const APP_VERSION_DATE = '2025-12-16';
 
 /**
