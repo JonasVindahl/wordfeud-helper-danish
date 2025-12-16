@@ -1,50 +1,49 @@
-# Wordfeud Hjælper Dansk 🇩🇰
+# Wordfeud Hjælper Dansk
 
-Et gratis, hurtigt og offline-klar Wordfeud-værktøj til danske spillere.
+A free, fast and offline-capable Wordfeud helper for Danish players.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://wordfeud.jonasvindahl.dev/)
-[![PWA](https://img.shields.io/badge/PWA-enabled-blue)](https://wordfeud.jonasvindahl.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+Live at [wordfeud.jonasvindahl.dev](https://wordfeud.jonasvindahl.dev/)
 
-## ✨ Features
+## Features
 
-- 🔍 **Over 400.000 danske ord** - Omfattende ordliste med bøjninger
-- 🃏 **Joker-support** - Brug `?` som wildcard bogstav
-- 🎯 **Mønster-søgning** - Find ord med `*` og `.` mønstre
-- 📊 **Point-beregning** - Automatisk beregning efter Wordfeud's pointsystem
-- 📱 **PWA** - Installer som app på mobil og desktop
-- 🚀 **Offline-klar** - Virker uden internetforbindelse
-- 🎨 **Modern UI** - Rent Nordic design
-- ⚡ **Hurtig** - Web Workers for optimeret søgning
-- 🔒 **Privacy-first** - Ingen tracking, ingen ads
+**Core Functionality**
+- Over 400,000 Danish words with comprehensive inflections
+- Wildcard support using `?` for joker tiles
+- Pattern matching with `*` and `.` for board positions
+- Automatic point calculation based on Wordfeud scoring system
+- Sort by points, length, or alphabetically
 
-## 🚀 Live Demo
+**Technical**
+- Progressive Web App (PWA) - installable on mobile and desktop
+- Works completely offline after first load
+- Web Workers for optimized search performance
+- No frameworks - vanilla JavaScript
+- No tracking, no ads, no external dependencies
 
-Besøg [wordfeud.jonasvindahl.dev](https://wordfeud.jonasvindahl.dev/)
+## How to Use
 
-## 📖 Sådan bruges det
+1. Enter your letters - e.g. `TRÆON`
+2. Use wildcards - e.g. `TRÆ?ON` (? = any letter)
+3. Specify pattern - e.g. `M*` (words starting with M)
+4. Sort and filter - by points, length, or alphabetically
 
-1. **Indtast dine bogstaver** - fx `TRÆON`
-2. **Brug joker** - fx `TRÆ?ON` (? = vilkårligt bogstav)
-3. **Angiv mønster** - fx `M*` (ord der starter med M)
-4. **Sorter og filtrer** - efter point, længde eller alfabetisk
+### Pattern Examples
 
-### Mønster-eksempler
+- `M*` - Words starting with M
+- `*D` - Words ending with D
+- `..A*` - Words where 3rd letter is A
+- `M..GE*` - M + 2 letters + GE + optional extra
 
-- `M*` - Ord der starter med M
-- `*D` - Ord der slutter på D
-- `..A*` - Ord hvor 3. bogstav er A
-- `M..GE*` - M + 2 bogstaver + GE + evt. ekstra
+## Tech Stack
 
-## 🛠️ Tech Stack
+- Vanilla JavaScript (ES6+) with ES modules
+- Service Worker for offline functionality
+- Web Workers for background search processing
+- CSS Custom Properties for theming
+- LocalStorage for caching and user preferences
+- No build step required
 
-- **Vanilla JavaScript** (ES6+) - Ingen frameworks
-- **PWA** - Service Worker + Manifest
-- **Web Workers** - Background search
-- **CSS Custom Properties** - Modern styling
-- **LocalStorage** - Cache og preferences
-
-## 📂 Projekt Struktur
+## Project Structure
 
 ```
 wordfeud-helper-danish/
@@ -69,9 +68,9 @@ wordfeud-helper-danish/
 └── sitemap.xml            # SEO
 ```
 
-## 🚀 Development
+## Development
 
-### Kør lokalt
+### Running Locally
 
 ```bash
 # Clone repository
@@ -80,69 +79,54 @@ cd wordfeud-helper-danish
 
 # Start local server
 python3 -m http.server 8080
-# eller
+# or
 npx serve
 
-# Åbn browser
+# Open browser
 open http://localhost:8080
 ```
 
-### Ingen build required!
+No build step required - this is a modern vanilla JavaScript application. Simply open `index.html` in a browser.
 
-Dette er en moderne vanilla JavaScript app uden build step. Bare åbn `index.html` i en browser.
+## SEO & Performance
 
-## 📊 SEO & Performance
+- Lighthouse score: 90+
+- Mobile-first responsive design
+- Structured data with JSON-LD (WebApplication + FAQPage schema)
+- Open Graph and Twitter Card meta tags
+- Sitemap and robots.txt for search engines
+- Optimized for Danish search queries
 
-- ✅ **Lighthouse Score**: 90+
-- ✅ **Mobile-First**: Responsive design
-- ✅ **Structured Data**: JSON-LD (WebApplication + FAQPage)
-- ✅ **Meta Tags**: Open Graph + Twitter Cards
-- ✅ **Sitemap**: For Google indexing
-- ✅ **robots.txt**: Optimeret til crawlers
+## Security
 
-## 🔒 Security
-
-Se [SECURITY.md](SECURITY.md) for detaljer om:
+See [SECURITY.md](SECURITY.md) for details on:
 - Content Security Policy (CSP)
 - CORS headers
 - XSS protection
-- Cloudflare setup
+- Cloudflare configuration
 
-## 🤝 Contributing
+## Contributing
 
-Contributions er velkomne!
+Contributions are welcome. Please follow these steps:
 
-1. Fork projektet
-2. Opret en feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit dine ændringer (`git commit -m 'Add AmazingFeature'`)
-4. Push til branch (`git push origin feature/AmazingFeature`)
-5. Åbn en Pull Request
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
-## 📝 License
+## License
 
-MIT License - se [LICENSE](LICENSE) for detaljer.
+MIT License - see [LICENSE](LICENSE) for details.
 
-## 👤 Author
+## Author
 
-**Jonas Vindahl Bang**
-
+Jonas Vindahl Bang
 - Website: [jonasvindahl.dev](https://jonasvindahl.dev/)
 - GitHub: [@JonasVindahl](https://github.com/JonasVindahl)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- Ordliste baseret på Den Danske Ordbog
-- UI inspireret af Nordic design principper
-- Udviklet i samarbejde med AI
-
-## 📈 Roadmap
-
-- [ ] Understøtte andre sprog (norsk, svensk)
-- [ ] Tilføje anagram-søgning
-- [ ] Export til PDF/print
-- [ ] Dark mode
-- [ ] Ord-historik
-
----
-
-⭐ **Giv en stjerne** hvis du finder dette projekt nyttigt!
+- Word list based on Den Danske Ordbog
+- UI inspired by Nordic design principles
+- Developed with assistance from Claude AI

@@ -7,6 +7,12 @@
 # Thumbnails
 Thumbs.db
 
+# Search engine verification files
+google*.html
+BingSiteAuth.xml
+yandex*.html
+*.verification.html
+
 # Editor directories and files
 .vscode/
 .idea/
