@@ -638,6 +638,37 @@ function scrollToResults() {
 }
 
 /**
+ * Scroll to error message - cross-browser compatible
+ * Uses the same approach as scrollToResults
+ */
+function scrollToError() {
+    if (!elements.errorMessage) {
+        return;
+    }
+
+    // CRITICAL: Blur active input to prevent Mac browsers from blocking scroll
+    if (document.activeElement && document.activeElement.blur) {
+        document.activeElement.blur();
+    }
+
+    // Use requestAnimationFrame to ensure layout is complete
+    requestAnimationFrame(() => {
+        const rect = elements.errorMessage.getBoundingClientRect();
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop || 0;
+        const targetPosition = rect.top + currentScroll - 20;
+
+        try {
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        } catch (e) {
+            window.scrollTo(0, targetPosition);
+        }
+    });
+}
+
+/**
  * Highlight pattern match in word
  * @param {string} word - The word to highlight
  * @param {string} pattern - The pattern to match (e.g., "a*", "m..e*")
@@ -861,6 +892,11 @@ function handleClear() {
 function showError(message) {
     elements.errorMessage.textContent = message;
     elements.errorMessage.style.display = 'block';
+
+    // Scroll to show the error message
+    setTimeout(() => {
+        scrollToError();
+    }, 100);
 }
 
 /**

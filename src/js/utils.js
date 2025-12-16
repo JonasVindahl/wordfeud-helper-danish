@@ -116,6 +116,11 @@ export function canFormWord(word, availableLetters, availableWildcards) {
         }
     }
 
+    // Jokers should also count as "my letters"
+    if (wildcardsNeeded > 0) {
+        usedUserLetters = true;
+    }
+
     const canForm = wildcardsNeeded <= availableWildcards;
 
     return {
@@ -170,6 +175,11 @@ export function canFormWordWithExtras(word, availableLetters, availableWildcards
         if (available > 0) {
             usedUserLetters = true;
         }
+    }
+
+    // Jokers should also count as "my letters"
+    if (wildcardsNeeded > 0) {
+        usedUserLetters = true;
     }
 
     const canForm = wildcardsNeeded <= availableWildcards;
