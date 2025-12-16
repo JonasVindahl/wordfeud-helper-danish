@@ -3,13 +3,15 @@
  * Provides offline support by caching app resources
  */
 
-// Cache version v33 - Fix LCP regression
-// Updated: 2025-12-16 - Use CSS Grid instead of min-height to fix CLS without blocking paint
-const CACHE_NAME = 'wordfeud-helper-v33-production';
+// Cache version v34 - Add joker page for offline support
+// Updated: 2025-12-17 - Cache joker page and ensure full offline functionality
+const CACHE_NAME = 'wordfeud-helper-v34-production';
 
 const STATIC_ASSETS = [
     '/',
     '/index.html',
+    '/joker/',
+    '/joker/index.html',
     '/assets/styles/styles.css',
     '/src/js/main.js',
     '/src/js/init.js',

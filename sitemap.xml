@@ -2,18 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
   <url>
     <loc>https://wordfeud.jonasvindahl.dev/</loc>
     <lastmod>2025-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="da"
+    <xhtml:link rel="alternate" hreflang="da"
       href="https://wordfeud.jonasvindahl.dev/" />
-    <xhtml:link
-      rel="alternate"
-      hreflang="x-default"
+    <xhtml:link rel="alternate" hreflang="x-default"
       href="https://wordfeud.jonasvindahl.dev/" />
   </url>
+
+  <!-- 🔽 NY: Joker-side -->
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/joker</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="da"
+      href="https://wordfeud.jonasvindahl.dev/joker" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://wordfeud.jonasvindahl.dev/joker" />
+  </url>
+
 </urlset>
