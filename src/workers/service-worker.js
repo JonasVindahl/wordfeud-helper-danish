@@ -3,9 +3,9 @@
  * Provides offline support by caching app resources
  */
 
-// Cache version v24 - Production release with scroll fix
-// Updated: 2025-12-13 - Clean production build, scroll works on all browsers
-const CACHE_NAME = 'wordfeud-helper-v24-production';
+// Cache version v25 - CSP fix and Umami analytics
+// Updated: 2025-12-16 - Fixed CSP violations, enabled Umami tracking
+const CACHE_NAME = 'wordfeud-helper-v25-production';
 
 const STATIC_ASSETS = [
     '/',

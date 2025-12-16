@@ -8,8 +8,8 @@ import { initUI, showAppContent, updateLoadingProgress, showLoadingError } from 
 import { trackPWAInstalled, trackPageLoad } from './analytics.js';
 
 // App version - synced with service worker cache name
-export const APP_VERSION = 'v24';
-export const APP_VERSION_DATE = '2025-12-13';
+export const APP_VERSION = 'v25';
+export const APP_VERSION_DATE = '2025-12-16';
 
 /**
  * Initialize the application
@@ -142,62 +142,15 @@ function showUpdateNotification(registration) {
         existingNotification.remove();
     }
 
-    // Create a simple notification banner
+    // Create notification banner using CSS classes
     const notification = document.createElement('div');
     notification.id = 'update-notification';
-    notification.style.cssText = `
-        position: fixed;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: #4CAF50;
-        color: white;
-        padding: 16px 24px;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        z-index: 10000;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        max-width: 90%;
-        text-align: center;
-        animation: slideDown 0.3s ease-out;
-    `;
-
-    // Add animation
-    const style = document.createElement('style');
-    style.textContent = `
-        @keyframes slideDown {
-            from {
-                transform: translateX(-50%) translateY(-100px);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(-50%) translateY(0);
-                opacity: 1;
-            }
-        }
-    `;
-    document.head.appendChild(style);
-
     notification.innerHTML = `
-        <div style="margin-bottom: 8px; font-weight: 600;">Ny version tilgængelig! 🎉</div>
-        <button id="update-reload-btn" style="
-            background: white;
-            color: #4CAF50;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            font-weight: 600;
-            cursor: pointer;
-            margin-right: 8px;
-        ">Genindlæs nu</button>
-        <button id="update-later-btn" style="
-            background: transparent;
-            color: white;
-            border: 1px solid white;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-        ">Senere</button>
+        <div class="update-title">Ny version tilgængelig! 🎉</div>
+        <div class="update-actions">
+            <button id="update-reload-btn">Genindlæs nu</button>
+            <button id="update-later-btn">Senere</button>
+        </div>
     `;
     document.body.appendChild(notification);
 
