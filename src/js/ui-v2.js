@@ -634,11 +634,21 @@ function scrollToResults() {
  * @param {string} pattern - The pattern to match (e.g., "a*", "m..e*")
  * @returns {string} HTML string with highlighted parts
  */
+/**
+ * Safely highlight pattern match using DOM API (XSS-safe)
+ * @param {string} word - The word to highlight
+ * @param {string} pattern - The pattern to match
+ * @returns {DocumentFragment} - Safe DOM fragment
+ */
 function highlightPatternMatch(word, pattern) {
-    if (!pattern) return word;
+    const fragment = document.createDocumentFragment();
+
+    if (!pattern) {
+        fragment.appendChild(document.createTextNode(word));
+        return fragment;
+    }
 
     // Convert pattern to regex
-    // Replace * with .* and . with single char
     const regexPattern = pattern
         .replace(/[.*+?^${}()|[\]\\]/g, '\\$&') // Escape special chars
         .replace(/\\\*/g, '.*') // * becomes .*
@@ -649,16 +659,24 @@ function highlightPatternMatch(word, pattern) {
         const match = word.match(regex);
 
         if (match && match[1]) {
-            const matchedPart = match[1];
-            const rest = word.substring(matchedPart.length);
-            return `<span class="pattern-match">${matchedPart}</span>${rest}`;
+            // Create highlighted span for matched part
+            const matchSpan = document.createElement('span');
+            matchSpan.className = 'pattern-match';
+            matchSpan.textContent = match[1]; // Safe - no HTML injection
+
+            // Add matched part and rest of word
+            fragment.appendChild(matchSpan);
+            fragment.appendChild(document.createTextNode(word.substring(match[1].length)));
+        } else {
+            fragment.appendChild(document.createTextNode(word));
         }
     } catch (e) {
         // Invalid regex, return word as-is
         console.warn('Invalid pattern for highlighting:', pattern, e);
+        fragment.appendChild(document.createTextNode(word));
     }
 
-    return word;
+    return fragment;
 }
 
 /**
@@ -696,7 +714,7 @@ function displayResultsPage() {
         // Highlight pattern match if there's a board pattern
         const boardPattern = elements.boardPatternInput.value.trim();
         if (boardPattern) {
-            wordCell.innerHTML = highlightPatternMatch(result.word, boardPattern);
+            wordCell.appendChild(highlightPatternMatch(result.word, boardPattern));
         } else {
             wordCell.textContent = result.word;
         }
