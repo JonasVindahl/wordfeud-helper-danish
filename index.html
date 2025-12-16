@@ -10,10 +10,9 @@
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="no-referrer">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <!-- Enhanced CSP: Removed 'unsafe-inline' from script-src for XSS protection -->
-    <!-- Note: frame-ancestors cannot be set via meta tag - use X-Frame-Options instead -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://umami.jonasvindahl.dev; style-src 'self' 'unsafe-inline'; worker-src 'self'; connect-src 'self' https://umami.jonasvindahl.dev; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+    <!-- Enhanced CSP: Allows JSON-LD structured data via SHA256 hash -->
+    <!-- Note: X-Frame-Options and frame-ancestors should be set via HTTP headers (Cloudflare) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://umami.jonasvindahl.dev 'sha256-q/1CKn2lYbdCe7ZYXE3T7oyBLxCYIbcDrIbFIR5+y5I='; style-src 'self' 'unsafe-inline'; worker-src 'self'; connect-src 'self' https://umami.jonasvindahl.dev; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
 
     <title>Wordfeud Hjælper – Find danske ord med joker, mønstre og point</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230d5aa8'/><text x='50' y='50' text-anchor='middle' dominant-baseline='central' font-size='50' font-weight='bold' fill='white'>W</text></svg>">
