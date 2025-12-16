@@ -3,9 +3,9 @@
  * Provides offline support by caching app resources
  */
 
-// Cache version v25 - CSP fix and Umami analytics
-// Updated: 2025-12-16 - Fixed CSP violations, enabled Umami tracking
-const CACHE_NAME = 'wordfeud-helper-v25-production';
+// Cache version v28 - Fix joker-only searches
+// Updated: 2025-12-16 - Fixed joker-only searches to properly detect user letters
+const CACHE_NAME = 'wordfeud-helper-v28-production';
 
 const STATIC_ASSETS = [
     '/',

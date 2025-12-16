@@ -116,8 +116,13 @@ export function canFormWord(word, availableLetters, availableWildcards) {
         }
     }
 
-    // Jokers should also count as "my letters"
-    if (wildcardsNeeded > 0) {
+    // CRITICAL FIX: If user has ONLY jokers (no regular letters), count as using user letters
+    if (availableLetters.size === 0 && availableWildcards > 0) {
+        usedUserLetters = true;
+    }
+
+    // Also count as user letters if we're using any wildcards
+    if (wildcardsNeeded > 0 && availableWildcards > 0) {
         usedUserLetters = true;
     }
 
@@ -177,8 +182,13 @@ export function canFormWordWithExtras(word, availableLetters, availableWildcards
         }
     }
 
-    // Jokers should also count as "my letters"
-    if (wildcardsNeeded > 0) {
+    // CRITICAL FIX: If user has ONLY jokers (no regular letters), count as using user letters
+    if (availableLetters.size === 0 && availableWildcards > 0) {
+        usedUserLetters = true;
+    }
+
+    // Also count as user letters if we're using any wildcards
+    if (wildcardsNeeded > 0 && availableWildcards > 0) {
         usedUserLetters = true;
     }
 
