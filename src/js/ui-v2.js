@@ -926,7 +926,11 @@ function hideError() {
 export function showAppContent() {
     document.getElementById('wordlist-loading').style.display = 'none';
     document.getElementById('app-content').style.display = 'block';
-    elements.lettersInput.focus();
+
+    // Delay focus to avoid forced reflow during layout
+    setTimeout(() => {
+        elements.lettersInput.focus();
+    }, 50);
 }
 
 /**

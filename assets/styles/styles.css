@@ -131,6 +131,15 @@ body {
     padding-bottom: 100px; /* Space for fixed install prompt */
 }
 
+/* Main content area - fixed min-height prevents CLS */
+main {
+    min-height: 500px; /* Prevent footer shift during loading → app transition */
+}
+
+#app-content {
+    min-height: 400px; /* Match loading container height */
+}
+
 /* ========================================
    HEADER
    ======================================== */
@@ -1929,7 +1938,7 @@ code.pattern-dot {
 }
 
 .tip-label {
-    color: var(--info-color);
+    color: #047086; /* Darkened from --info-color for WCAG AA contrast on --info-light */
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 0.05em;

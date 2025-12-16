@@ -3,9 +3,9 @@
  * Provides offline support by caching app resources
  */
 
-// Cache version v31 - Performance improvements
-// Updated: 2025-12-16 - Fixed CLS, improved contrast, optimized loading
-const CACHE_NAME = 'wordfeud-helper-v31-production';
+// Cache version v32 - CLS and reflow fixes
+// Updated: 2025-12-16 - Fixed CLS properly with main min-height, delayed focus
+const CACHE_NAME = 'wordfeud-helper-v32-production';
 
 const STATIC_ASSETS = [
     '/',
