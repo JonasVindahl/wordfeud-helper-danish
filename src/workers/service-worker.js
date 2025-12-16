@@ -18,6 +18,7 @@ const STATIC_ASSETS = [
     '/src/js/wordlistLoader.js',
     '/src/js/scoring.js',
     '/src/js/utils.js',
+    '/src/js/analytics.js',
     '/src/workers/searchWorker.js',
     '/public/words.json'
 ];

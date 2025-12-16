@@ -5,6 +5,7 @@
 
 import { loadWordlist } from './wordlistLoader.js';
 import { initUI, showAppContent, updateLoadingProgress, showLoadingError } from './ui-v2.js';
+import { trackPWAInstalled, trackPageLoad } from './analytics.js';
 
 // App version - synced with service worker cache name
 export const APP_VERSION = 'v24';
@@ -28,6 +29,9 @@ async function init() {
 
         // Show app content
         showAppContent();
+
+        // Track page load
+        trackPageLoad();
 
         console.log('Wordfeud Hjælper initialized successfully');
 
@@ -362,6 +366,10 @@ if (iosInstallDismiss) {
 // Detect if app is installed (after user accepts)
 window.addEventListener('appinstalled', () => {
     console.log('PWA was installed successfully');
+
+    // Track PWA installation
+    trackPWAInstalled();
+
     deferredPrompt = null;
 
     // Hide all install prompts

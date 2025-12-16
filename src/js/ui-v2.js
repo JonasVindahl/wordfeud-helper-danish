@@ -6,6 +6,7 @@
 import { searchWords, validateFilters, passesFilters } from './searchEngine.js';
 import { isValidInput, normalizeString, parseLetters, canFormWord, canFormWordWithExtras, buildExtraLettersFromPattern } from './utils.js';
 import { getWordlist } from './wordlistLoader.js';
+import { trackSolveClicked, trackSolveCompleted, trackWordCopied, trackHelpOpened } from './analytics.js';
 
 // DOM Elements
 let elements = {};
@@ -464,6 +465,11 @@ async function handleSearch() {
     elements.searchButton.classList.add('loading');
     elements.resultsPreview.style.display = 'none';
 
+    // Track search event
+    const jokerCount = (lettersString.match(/\?/g) || []).length;
+    const patternUsed = !!filters.boardPattern;
+    trackSolveClicked(lettersString.length, jokerCount, patternUsed);
+
     // Small delay to show loading state
     await new Promise(resolve => setTimeout(resolve, 10));
 
@@ -573,6 +579,9 @@ function getFilters() {
  * Display search results
  */
 function displayResults(results, elapsedMs) {
+    // Track search completion
+    trackSolveCompleted(results.length, elapsedMs);
+
     // Update summary
     elements.resultsSummary.textContent = `Fandt ${results.length} ord på ${elapsedMs} ms`;
 
@@ -754,6 +763,9 @@ function displayResultsPage() {
         row.addEventListener('click', () => {
             // Copy word to clipboard
             navigator.clipboard.writeText(result.word).then(() => {
+                // Track copy event
+                trackWordCopied();
+
                 // Add copied animation
                 row.classList.add('copied');
                 setTimeout(() => row.classList.remove('copied'), 1500);
@@ -1152,6 +1164,9 @@ function initGuideToggle() {
             if (guideToggleIcon) guideToggleIcon.textContent = '▶';
             localStorage.setItem('guide-collapsed', 'true');
         } else {
+            // Track help opened
+            trackHelpOpened();
+
             // Expand with animation
             guideContent.style.display = 'block';
             guideContent.style.maxHeight = '0';
