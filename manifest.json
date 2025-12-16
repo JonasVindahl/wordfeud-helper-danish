@@ -1,0 +1,23 @@
+{
+  "name": "Wordfeud Hjælper Dansk",
+  "short_name": "Wordfeud DK",
+  "description": "Find de bedste danske ord til Wordfeud og Scrabble",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0d5aa8",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><circle cx='256' cy='256' r='240' fill='%230d5aa8'/><text x='256' y='256' text-anchor='middle' dominant-baseline='central' font-size='280' font-weight='bold' fill='white' font-family='Arial'>W</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "utilities", "education"],
+  "lang": "da",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}

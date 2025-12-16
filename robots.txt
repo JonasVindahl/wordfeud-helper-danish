@@ -1,0 +1,15 @@
+# robots.txt for Wordfeud Hjælper Dansk
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://wordfeud.jonasvindahl.dev/sitemap.xml
+
+# Disallow crawling of service worker and manifest files (not useful for search engines)
+Disallow: /service-worker.js
+Disallow: /searchWorker.js
+
+# Crawl-delay (optional, adjust if needed)
+# Crawl-delay: 1

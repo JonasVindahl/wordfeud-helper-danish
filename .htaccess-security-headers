@@ -1,0 +1,42 @@
+# Security Headers for Wordfeud Helper (Apache)
+# Rename this file to .htaccess and place in your web root
+# OR include in your Apache configuration file (httpd.conf or virtualhost)
+#
+# Requires mod_headers to be enabled:
+# a2enmod headers (Ubuntu/Debian)
+
+<IfModule mod_headers.c>
+    # Content Security Policy - Prevents XSS attacks
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; worker-src 'self'; connect-src 'self'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;"
+
+    # Prevent clickjacking attacks
+    Header always set X-Frame-Options "DENY"
+
+    # Prevent MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Privacy: Don't send referrer to external sites
+    Header always set Referrer-Policy "no-referrer"
+
+    # Force HTTPS (only enable if using HTTPS)
+    # Uncomment the line below if you have SSL/TLS enabled
+    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Disable unnecessary browser features
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()"
+
+    # XSS Protection (legacy header, but adds defense in depth)
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Prevent access to sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Prevent access to .git directory (if exists)
+<DirectoryMatch "\.git">
+    Order allow,deny
+    Deny from all
+</DirectoryMatch>
