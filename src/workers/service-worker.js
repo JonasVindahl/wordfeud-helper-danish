@@ -3,9 +3,9 @@
  * Provides offline support by caching app resources
  */
 
-// Cache version v28 - Fix joker-only searches
-// Updated: 2025-12-16 - Fixed joker-only searches to properly detect user letters
-const CACHE_NAME = 'wordfeud-helper-v28-production';
+// Cache version v29 - Fix CSP violation
+// Updated: 2025-12-16 - Added missing script hash to CSP
+const CACHE_NAME = 'wordfeud-helper-v29-production';
 
 const STATIC_ASSETS = [
     '/',

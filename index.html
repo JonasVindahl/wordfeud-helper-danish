@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -11,12 +12,15 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="no-referrer">
     <!-- Security: CSP (strict) + allow inline JSON-LD via hashes (no unsafe-inline for scripts) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://umami.jonasvindahl.dev 'sha256-dGCxvwBhX3PbwNwcEDarGWyF2wc7Bm+oiunA2fZ/Iik=' 'sha256-kFR/LhSk2iJ7qrYucs5pHDeRaG8l3xpKM1hdTIzV1f8='; style-src 'self' 'unsafe-inline'; worker-src 'self'; connect-src 'self' https://umami.jonasvindahl.dev; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://umami.jonasvindahl.dev 'sha256-dGCxvwBhX3PbwNwcEDarGWyF2wc7Bm+oiunA2fZ/Iik=' 'sha256-kFR/LhSk2iJ7qrYucs5pHDeRaG8l3xpKM1hdTIzV1f8=' 'sha256-BGR6b/BZPHeOeJMwtdwCIe6joLbRlXL3gAnM4MrsjpE='; style-src 'self' 'unsafe-inline'; worker-src 'self'; connect-src 'self' https://umami.jonasvindahl.dev; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
 
-    <title>Wordfeud Hjælper – Find danske ord med joker, mønstre og point</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230d5aa8'/><text x='50' y='50' text-anchor='middle' dominant-baseline='central' font-size='50' font-weight='bold' fill='white'>W</text></svg>">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#0d5aa8">
+    <title>Wordfeud Hjælper – danske ord med joker og mønster</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <meta name="theme-color" content="#0D5AA8">
+        <link rel="manifest" href="/manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -26,7 +30,7 @@
     <script defer src="https://umami.jonasvindahl.dev/script.js" data-website-id="95de39c9-1c7c-451e-b683-0ae9cef13450"></script>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Gratis dansk Wordfeud hjælper. Find ord med joker (?), mønstre (* og .), point og længde. Hurtig, reklamefri og mobilvenlig. Virker offline med dansk ordliste.">
+    <meta name="description" content="Gratis dansk Wordfeud/Scrabble hjælper. Find ord med joker (?), mønster (.) og wildcard (*). Hurtig, reklamefri og mobilvenlig – virker offline.">
     <meta name="keywords" content="wordfeud hjælper, wordfeud dansk, scrabble hjælper, ordhjælper, danske ord, wordfeud snyd, wordfeud hjælp, ordspil hjælper, wordfeud calculator">
     <meta name="author" content="Jonas Vindahl Bang">
     <link rel="canonical" href="https://wordfeud.jonasvindahl.dev/">
@@ -35,8 +39,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://wordfeud.jonasvindahl.dev/">
-    <meta property="og:title" content="Wordfeud Hjælper – Find danske ord med joker, mønstre og point">
-    <meta property="og:description" content="Gratis dansk Wordfeud hjælper. Find ord med joker (?), mønstre (* og .), point og længde. Hurtig, reklamefri og mobilvenlig.">
+    <meta property="og:title" content="Wordfeud Hjælper – danske ord med joker og mønster">
+    <meta property="og:description" content="Gratis dansk Wordfeud/Scrabble hjælper. Find ord med joker (?), mønster (.) og wildcard (*). Hurtig, reklamefri og mobilvenlig.">
     <meta property="og:image" content="https://wordfeud.jonasvindahl.dev/assets/images/og-image.svg">
     <meta property="og:locale" content="da_DK">
     <meta property="og:site_name" content="Wordfeud Hjælper Dansk">
@@ -44,8 +48,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://wordfeud.jonasvindahl.dev/">
-    <meta name="twitter:title" content="Wordfeud Hjælper – Find danske ord med joker, mønstre og point">
-    <meta name="twitter:description" content="Gratis dansk Wordfeud hjælper. Find ord med joker (?), mønstre (* og .), point og længde. Hurtig og reklamefri.">
+    <meta name="twitter:title" content="Wordfeud Hjælper – danske ord med joker og mønster">
+    <meta name="twitter:description" content="Gratis dansk Wordfeud/Scrabble hjælper. Find ord med joker (?), mønster (.) og wildcard (*). Hurtig, reklamefri og mobilvenlig.">
     <meta name="twitter:image" content="https://wordfeud.jonasvindahl.dev/assets/images/twitter-image.svg">
 
     <link rel="stylesheet" href="assets/styles/styles.css?v=7">
@@ -217,6 +221,7 @@
                                         id="clear-letters-btn"
                                         style="display: none;"
                                         aria-label="Ryd"
+                                        data-track="clear_letters"
                                     >
                                         &times;
                                     </button>
@@ -226,7 +231,7 @@
                             <!-- Joker button -->
                             <div class="input-group compact-btn-group">
                                 <label class="compact-label">Joker</label>
-                                <button type="button" class="quick-btn scrabble-tile joker-btn compact-joker" data-char="?" data-target="letters-input">
+                                <button type="button" class="quick-btn scrabble-tile joker-btn compact-joker" data-char="?" data-target="letters-input" data-track="insert_joker">
                                     <span class="tile-letter">?</span>
                                 </button>
                             </div>
@@ -249,6 +254,7 @@
                                         id="clear-board-btn"
                                         style="display: none;"
                                         aria-label="Ryd"
+                                        data-track="clear_board"
                                     >
                                         &times;
                                     </button>
@@ -259,10 +265,10 @@
                             <div class="input-group compact-btn-group">
                                 <label class="compact-label">Mønstre</label>
                                 <div class="compact-pattern-btns">
-                                    <button type="button" class="quick-btn pattern-btn single-char-btn" data-char="." data-target="board-pattern-input">
+                                    <button type="button" class="quick-btn pattern-btn single-char-btn" data-char="." data-target="board-pattern-input" data-track="insert_dot">
                                         <span class="btn-icon">.</span>
                                     </button>
-                                    <button type="button" class="quick-btn pattern-btn wildcard-btn" data-char="*" data-target="board-pattern-input">
+                                    <button type="button" class="quick-btn pattern-btn wildcard-btn" data-char="*" data-target="board-pattern-input" data-track="insert_star">
                                         <span class="btn-icon">*</span>
                                     </button>
                                 </div>
@@ -301,14 +307,14 @@
                         <div class="filter-divider"></div>
                         <div class="actions-integrated">
                             <div class="button-with-hint">
-                                <button id="search-button" class="btn btn-primary" type="button" disabled>
+                                <button id="search-button" class="btn btn-primary" type="button" disabled data-track="solve">
                                     Find ord
                                 </button>
                                 <p id="search-button-hint" class="button-hint" style="display: block;">
                                     <!-- Skriv mindst ét bogstav for at søge. -->
                                 </p>
                             </div>
-                            <button id="clear-button" class="btn btn-secondary" type="button" title="Nulstiller både bogstaver, mønster og filtre">
+                            <button id="clear-button" class="btn btn-secondary" type="button" title="Nulstiller både bogstaver, mønster og filtre" data-track="clear_all">
                                 Ryd alt
                             </button>
                         </div>
@@ -357,15 +363,15 @@
 
                     <!-- Pagination -->
                     <div id="pagination" class="pagination" style="display: none;">
-                        <button id="prev-page" class="btn btn-small" type="button">Forrige</button>
+                        <button id="prev-page" class="btn btn-small" type="button" data-track="page_prev">Forrige</button>
                         <span id="page-info"></span>
-                        <button id="next-page" class="btn btn-small" type="button">Næste</button>
+                        <button id="next-page" class="btn btn-small" type="button" data-track="page_next">Næste</button>
                     </div>
                 </section>
 
                 <!-- Guide Section (Collapsible) -->
                 <section class="guide-section ui-block" aria-label="Hjælp og eksempler">
-                    <button class="guide-header" id="guide-toggle" type="button" aria-expanded="true" aria-controls="guide-content">
+                    <button class="guide-header" id="guide-toggle" type="button" aria-expanded="true" aria-controls="guide-content" data-track="help_toggle">
                         <div class="guide-header-content">
                             <span class="guide-icon icon-guide" aria-hidden="true">?</span>
                             <div>
@@ -529,7 +535,7 @@
             <p>Wordfeud Hjælper — hurtig, simpel og offline-klar.</p>
             <p>
                 Lavet af Jonas Vindahl Bang
-                <a href="https://jonasvindahl.dev/">(jonasvindahl.dev)</a>,
+                <a href="https://jonasvindahl.dev/" data-track="author_link">(jonasvindahl.dev)</a>,
                 i samarbejde med AI.
             </p>
             <p id="app-version">
@@ -549,8 +555,8 @@
                 </div>
             </div>
             <div class="install-prompt-actions">
-                <button id="install-button" class="btn btn-primary btn-small">Installer</button>
-                <button id="install-dismiss" class="btn btn-text btn-small">Luk</button>
+                <button id="install-button" class="btn btn-primary btn-small" data-track="install_prompt_install">Installer</button>
+                <button id="install-dismiss" class="btn btn-text btn-small" data-track="install_prompt_dismiss">Luk</button>
             </div>
         </div>
     </div>
@@ -566,7 +572,7 @@
                 </div>
             </div>
             <div class="install-prompt-actions">
-                <button id="ios-install-dismiss" class="btn btn-text btn-small">Luk</button>
+                <button id="ios-install-dismiss" class="btn btn-text btn-small" data-track="ios_install_prompt_dismiss">Luk</button>
             </div>
         </div>
     </div>
