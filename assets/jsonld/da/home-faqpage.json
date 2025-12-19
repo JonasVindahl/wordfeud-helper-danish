@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hvad er Wordfeud Hj\u00e6lper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wordfeud Hj\u00e6lper er et gratis v\u00e6rkt\u00f8j, der hj\u00e6lper dig med at finde gyldige danske ord i Wordfeud. Indtast dine bogstaver, brug joker (?), s\u00f8g med m\u00f8nstre som * og ., og sorter ord efter point og l\u00e6ngde. V\u00e6rkt\u00f8jet er hurtigt, reklamefrit og optimeret til b\u00e5de mobil og tablet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvordan virker joker i Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jokeren (?) kan bruges som et vilk\u00e5rligt bogstav. N\u00e5r du indtaster dine bogstaver, kan du bruge ? til at repr\u00e6sentere en blank brik. For eksempel: hvis du har bogstaverne TR\u00c6?ON, vil jokeren automatisk pr\u00f8ve alle mulige bogstaver for at finde gyldige ord som TR\u00c6TON, TR\u00c6DON osv."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan man s\u00f8ge med m\u00f8nstre i Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja! Du kan bruge m\u00f8nstre til at beskrive ord der allerede ligger p\u00e5 br\u00e6ttet. Brug . for pr\u00e6cis \u00e9t vilk\u00e5rligt bogstav, og * for 0 eller flere bogstaver. For eksempel: M* finder ord der starter med M, og ..A* finder ord hvor det 3. bogstav er A."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Er Wordfeud Hj\u00e6lper gratis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, Wordfeud Hj\u00e6lper er 100% gratis. Der er ingen reklamer, ingen skjulte gebyrer, og du beh\u00f8ver ikke at oprette en konto. V\u00e6rkt\u00f8jet virker ogs\u00e5 offline efter f\u00f8rste gang du har brugt det."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvilke danske ord er tilladt i Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wordfeud Hj\u00e6lper bruger en omfattende dansk ordliste med over 400.000 gyldige ord. Ordlisten inkluderer almindelige danske ord og b\u00f8jninger fra Den Danske Ordbog og er optimeret til Wordfeud og Scrabble."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvordan beregnes point i Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hvert bogstav har en v\u00e6rdi, og pointene vises ved hvert ord i resultaterne. V\u00e6rkt\u00f8jet beregner automatisk pointene baseret p\u00e5 Wordfeud's officielle pointsystem. Du kan sortere resultaterne efter h\u00f8jeste point for at finde de mest v\u00e6rdifulde ord."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Indsamler I mine data eller de ord jeg s\u00f8ger?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nej. Vi bruger kun anonym statistik til at forbedre appen (f.eks. hvilke funktioner der bruges mest). Vi gemmer IKKE dine bogstaver, ord eller s\u00f8gninger. Ingen cookies, ingen persondata, ingen tracking p\u00e5 tv\u00e6rs af sider. Alt data behandles lokalt i din browser og bliver aldrig sendt til nogen server."
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Geeft het jokerteken punten in Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Normaal gesproken geeft het jokerteken 0 punten, maar het kan nog steeds enorm krachtig zijn omdat het mogelijk maakt om woorden te maken die bonusvakken raken of goede kruiswoorden cre\u00ebren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een jokerteken elke letter worden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja \u2013 het jokerteken kan gebruikt worden als elke letter in het spel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe typ ik een jokerteken in Wordfeud Helper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typ ? in het veld 'Je letters' (je kunt ook op de jokerknop klikken). Als je twee jokertekens hebt, typ dan ??."
+      }
+    }
+  ]
+}

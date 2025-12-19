@@ -10,8 +10,8 @@
   <!-- Security Headers -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="no-referrer">
-  <!-- Security: CSP (strict) + allow inline JSON-LD via hashes (no unsafe-inline for scripts) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://umami.jonasvindahl.dev 'sha256-dGCxvwBhX3PbwNwcEDarGWyF2wc7Bm+oiunA2fZ/Iik=' 'sha256-kFR/LhSk2iJ7qrYucs5pHDeRaG8l3xpKM1hdTIzV1f8=' 'sha256-BGR6b/BZPHeOeJMwtdwCIe6joLbRlXL3gAnM4MrsjpE=' 'sha256-H8zijihTPEJ15LN8vbe0IevYOZJlSum1EfqJYcLhNDQ=' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; worker-src 'self'; connect-src 'self' https://umami.jonasvindahl.dev; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+  <!-- Security: CSP (strict) + external JSON-LD (no inline scripts) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://umami.jonasvindahl.dev https://static.cloudflareinsights.com 'sha256-XWztlj8GMtpnbPMkzakNXtv/fE8OnGTxhYMHcEixNcI='; style-src 'self' 'unsafe-inline'; worker-src 'self'; connect-src 'self' https://umami.jonasvindahl.dev https://static.cloudflareinsights.com https://cloudflareinsights.com; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
 
   <!-- Performance: Preconnect to analytics domain -->
   <link rel="preconnect" href="https://umami.jonasvindahl.dev" crossorigin>
@@ -31,6 +31,9 @@
 
   <!-- Analytics (Umami - Privacy-friendly, no cookies) -->
   <script defer src="https://umami.jonasvindahl.dev/script.js" data-website-id="95de39c9-1c7c-451e-b683-0ae9cef13450"></script>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "eb5cd968ab864d04a03290276661be10"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="Lær hvordan joker (?) fungerer i Wordfeud: hvad den kan bruges til, konkrete strategier og eksempler – og hvordan du finder joker-ord med Wordfeud Hjælper." />
@@ -38,6 +41,14 @@
   <meta name="author" content="Jonas Vindahl Bang">
   <link rel="canonical" href="https://wordfeud.jonasvindahl.dev/joker/" />
   <meta name="robots" content="index, follow" />
+
+  <!-- Language Alternates for SEO -->
+  <link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/joker" />
+  <link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/joker" />
+  <link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/joker" />
+  <link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/joker" />
+  <link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/joker" />
+  <link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/joker" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article" />
@@ -56,94 +67,16 @@
   <meta name="twitter:image" content="https://wordfeud.jonasvindahl.dev/assets/images/twitter-image.svg">
 
   <!-- Stylesheet - v10 with Grid-based CLS fix (no LCP regression) -->
-  <link rel="stylesheet" href="/assets/styles/styles.css?v=10" />
+  <link rel="stylesheet" href="/assets/styles/styles.css?v=11" />
 
   <!-- JSON-LD Structured Data - Article -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Wordfeud joker – sådan bruger du ? og finder de bedste ord",
-    "description": "Lær hvordan joker (?) fungerer i Wordfeud: hvad den kan bruges til, konkrete strategier og eksempler – og hvordan du finder joker-ord med Wordfeud Hjælper.",
-    "author": {
-      "@type": "Person",
-      "name": "Jonas Vindahl Bang",
-      "url": "https://jonasvindahl.dev/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Wordfeud Hjælper Dansk",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://wordfeud.jonasvindahl.dev/assets/images/og-image.svg"
-      }
-    },
-    "datePublished": "2025-01-15",
-    "dateModified": "2025-01-15",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://wordfeud.jonasvindahl.dev/joker/"
-    },
-    "inLanguage": "da-DK",
-    "keywords": "wordfeud joker, wordfeud blank brik, joker wordfeud, scrabble joker, wordfeud strategier"
-  }
-  </script>
+  <script type="application/ld+json" src="/assets/jsonld/da/joker-article.json"></script>
 
   <!-- JSON-LD Structured Data - BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Forside",
-        "item": "https://wordfeud.jonasvindahl.dev/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Wordfeud Joker Guide",
-        "item": "https://wordfeud.jonasvindahl.dev/joker/"
-      }
-    ]
-  }
-  </script>
+  <script type="application/ld+json" src="/assets/jsonld/da/joker-breadcrumb-list.json"></script>
 
   <!-- JSON-LD Structured Data - FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Giver jokeren point i Wordfeud?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Normalt giver jokeren 0 point, men den kan stadig være ekstremt stærk, fordi den gør det muligt at lave ord der rammer bonusfelter eller skaber gode kryds."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Kan en joker blive til Æ, Ø og Å?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ja – jokeren kan bruges som hvilket som helst bogstav, også danske bogstaver som Æ, Ø og Å."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Hvordan skriver jeg joker i Wordfeud Hjælper?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Skriv ? i feltet 'Dine bogstaver' (du kan også trykke på joker-knappen). Hvis du har to jokere, så skriv ??."
-        }
-      }
-    ]
-  }
-  </script>
+  <script type="application/ld+json" src="/assets/jsonld/da/joker-faqpage.json"></script>
 </head>
 
 <body>
@@ -164,6 +97,24 @@
         <div class="header-badges" aria-hidden="true">
           <span class="badge badge-primary">Guide</span>
           <span class="badge badge-soft">Wordfeud</span>
+        </div>
+      </div>
+
+      <!-- Language Switcher -->
+      <div class="language-switcher">
+        <button class="lang-switcher-btn" id="lang-switcher-btn" aria-label="Change language" data-track="lang_switcher_open">
+          <span class="lang-icon">🌐</span>
+          <span class="lang-current" id="lang-current">DA</span>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown" style="display: none;">
+          <a href="/" class="lang-option" data-lang="da">🇩🇰 Dansk</a>
+          <a href="/en" class="lang-option" data-lang="en">🇬🇧 English</a>
+          <a href="/sv" class="lang-option" data-lang="sv">🇸🇪 Svenska</a>
+          <!-- Norwegian removed - no wordlist available
+          <a href="/no" class="lang-option" data-lang="no">🇳🇴 Norsk</a>
+          -->
+          <a href="/nl" class="lang-option" data-lang="nl">🇳🇱 Nederlands</a>
+          <a href="/pt" class="lang-option" data-lang="pt">🇵🇹 Português</a>
         </div>
       </div>
     </header>
@@ -396,11 +347,17 @@
         <a href="/" data-track="joker_footer_back">Tilbage til Wordfeud Hjælper</a>
       </p>
       <p>
+        <a href="/download" class="btn btn-primary btn-small" data-track="joker_footer_download">📱 Download som app</a>
+      </p>
+      <p>
         Lavet af Jonas Vindahl Bang
         <a href="https://jonasvindahl.dev/" data-track="author_link">(jonasvindahl.dev)</a>,
         i samarbejde med AI.
       </p>
     </footer>
   </div>
+
+  <!-- Initialize language switcher -->
+  <script type="module" src="/src/js/joker-init.js"></script>
 </body>
 </html>

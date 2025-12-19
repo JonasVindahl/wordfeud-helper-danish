@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Ladda ner Wordfeud Helper",
+  "description": "Ladda ner och installera Wordfeud Helper som en app p\u00e5 Mac, PC, iPhone eller Android. Gratis PWA med offline-funktionalitet.",
+  "url": "https://wordfeud.jonasvindahl.dev/sv/download/",
+  "inLanguage": "sv-SE",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Wordfeud Helper Svenska",
+    "url": "https://wordfeud.jonasvindahl.dev/sv/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Jonas Vindahl Bang",
+    "url": "https://jonasvindahl.dev/"
+  }
+}

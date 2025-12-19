@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wordfeud joker \u2013 s\u00e5dan bruger du ? og finder de bedste ord",
+  "description": "L\u00e6r hvordan joker (?) fungerer i Wordfeud: hvad den kan bruges til, konkrete strategier og eksempler \u2013 og hvordan du finder joker-ord med Wordfeud Hj\u00e6lper.",
+  "author": {
+    "@type": "Person",
+    "name": "Jonas Vindahl Bang",
+    "url": "https://jonasvindahl.dev/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wordfeud Hj\u00e6lper Dansk",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://wordfeud.jonasvindahl.dev/assets/images/og-image.svg"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://wordfeud.jonasvindahl.dev/joker/"
+  },
+  "inLanguage": "da-DK",
+  "keywords": "wordfeud joker, wordfeud blank brik, joker wordfeud, scrabble joker, wordfeud strategier"
+}

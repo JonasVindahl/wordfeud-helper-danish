@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is Wordfeud Helper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wordfeud Helper is een gratis hulpmiddel dat je helpt om geldige Nederlandse woorden te vinden in Wordfeud. Voer je letters in, gebruik jokertekens (?), zoek met patronen zoals * en ., en sorteer woorden op punten en lengte. De tool is snel, advertentievrij en geoptimaliseerd voor zowel mobiel als tablet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe werken jokertekens in Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het jokerteken (?) kan gebruikt worden als elke letter. Wanneer je je letters invoert, kun je ? gebruiken om een blanco steen te representeren. Bijvoorbeeld: als je de letters TRA?NS hebt, zal het jokerteken automatisch alle mogelijke letters proberen om geldige woorden te vinden zoals TRAINS, TRAINS, etc."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kun je zoeken met patronen in Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja! Je kunt patronen gebruiken om woorden te beschrijven die al op het bord staan. Gebruik . voor precies \u00e9\u00e9n willekeurige letter, en * voor 0 of meer letters. Bijvoorbeeld: M* vindt woorden die beginnen met M, en ..A* vindt woorden waarbij de 3e letter een A is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Wordfeud Helper gratis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, Wordfeud Helper is 100% gratis. Er zijn geen advertenties, geen verborgen kosten, en je hoeft geen account aan te maken. De tool werkt ook offline nadat je hem voor het eerst hebt gebruikt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke Nederlandse woorden zijn toegestaan in Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wordfeud Helper gebruikt een uitgebreide Nederlandse woordenlijst met geldige woorden. De woordenlijst bevat veelgebruikte Nederlandse woorden en variaties geoptimaliseerd voor Wordfeud en Scrabble."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe worden punten berekend in Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Elke letter heeft een waarde, en de punten worden getoond voor elk woord in de resultaten. De tool berekent automatisch punten op basis van het offici\u00eble puntensysteem van Wordfeud. Je kunt de resultaten sorteren op hoogste punten om de meest waardevolle woorden te vinden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Verzamelen jullie mijn gegevens of de woorden die ik zoek?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. We gebruiken alleen anonieme statistieken om de app te verbeteren (bijv. welke functies het meest gebruikt worden). We slaan je letters, woorden of zoekopdrachten NIET op. Geen cookies, geen persoonlijke gegevens, geen cross-site tracking. Alle gegevens worden lokaal in je browser verwerkt en worden nooit naar een server gestuurd."
+      }
+    }
+  ]
+}

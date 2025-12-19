@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Wordfeud Helper English",
+  "alternateName": "Wordfeud EN",
+  "description": "Free English Wordfeud and Scrabble helper. Find the best words and get the highest points with English word list.",
+  "url": "https://wordfeud.jonasvindahl.dev/en/",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Jonas Vindahl Bang",
+    "url": "https://jonasvindahl.dev/"
+  },
+  "inLanguage": "en-US",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "softwareVersion": "1.0",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Wordfeud and Scrabble players",
+    "geographicArea": {
+      "@type": "Country",
+      "name": "United States"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "1"
+  },
+  "keywords": "wordfeud, scrabble, word helper, english, word game, wordfeud helper",
+  "featureList": "English word list, Offline support, Pattern matching, Point calculator, PWA"
+}

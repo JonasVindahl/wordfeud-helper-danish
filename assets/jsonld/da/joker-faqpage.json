@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Giver jokeren point i Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Normalt giver jokeren 0 point, men den kan stadig v\u00e6re ekstremt st\u00e6rk, fordi den g\u00f8r det muligt at lave ord der rammer bonusfelter eller skaber gode kryds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan en joker blive til \u00c6, \u00d8 og \u00c5?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja \u2013 jokeren kan bruges som hvilket som helst bogstav, ogs\u00e5 danske bogstaver som \u00c6, \u00d8 og \u00c5."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvordan skriver jeg joker i Wordfeud Hj\u00e6lper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Skriv ? i feltet 'Dine bogstaver' (du kan ogs\u00e5 trykke p\u00e5 joker-knappen). Hvis du har to jokere, s\u00e5 skriv ??."
+      }
+    }
+  ]
+}

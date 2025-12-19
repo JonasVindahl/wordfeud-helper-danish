@@ -3,10 +3,17 @@
  * Moved from inline script to comply with Content Security Policy
  */
 
+// Import main.js - service worker handles caching/versioning
+import('./main.js');
 
-// Force reload with timestamp for cache busting
-const timestamp = Date.now();
-import('./main.js?v=' + timestamp);
+// Initialize language switcher
+import('./i18n.js').then(({ initLanguageSwitcher }) => {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
+  } else {
+    initLanguageSwitcher();
+  }
+});
 
 // -------------------------------------------------
 // Global analytics bootstrap (Umami) — privacy safe

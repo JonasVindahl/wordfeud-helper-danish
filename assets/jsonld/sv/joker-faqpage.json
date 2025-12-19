@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ger jokern po\u00e4ng i Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Normalt ger jokern 0 po\u00e4ng, men den kan fortfarande vara extremt kraftfull eftersom den g\u00f6r det m\u00f6jligt att skapa ord som tr\u00e4ffar bonusrutor eller skapar bra korsord."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan en joker bli vilken bokstav som helst?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja \u2013 jokern kan anv\u00e4ndas som vilken bokstav som helst i spelet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur skriver jag en joker i Wordfeud Helper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Skriv ? i f\u00e4ltet 'Dina bokst\u00e4ver' (du kan ocks\u00e5 klicka p\u00e5 jokerknappen). Om du har tv\u00e5 jokrar, skriv ??."
+      }
+    }
+  ]
+}

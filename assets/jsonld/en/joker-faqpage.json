@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does the wildcard give points in Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Normally the wildcard gives 0 points, but it can still be extremely powerful because it makes it possible to create words that hit bonus squares or create good crosswords."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a wildcard become any letter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes \u2013 the wildcard can be used as any letter in the game."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I type a wildcard in Wordfeud Helper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Type ? in the 'Your letters' field (you can also click the wildcard button). If you have two wildcards, type ??."
+      }
+    }
+  ]
+}

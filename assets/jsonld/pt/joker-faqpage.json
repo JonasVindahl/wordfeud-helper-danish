@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O curinga d\u00e1 pontos no Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Normalmente o curinga d\u00e1 0 pontos, mas ainda pode ser extremamente poderoso porque torna poss\u00edvel criar palavras que atingem casas de b\u00f4nus ou criam bons cruzamentos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O curinga pode se tornar qualquer letra?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim \u2013 o curinga pode ser usado como qualquer letra no jogo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como digito um curinga no Wordfeud Helper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digite ? no campo 'Suas letras' (voc\u00ea tamb\u00e9m pode clicar no bot\u00e3o de curinga). Se voc\u00ea tiver dois curingas, digite ??."
+      }
+    }
+  ]
+}

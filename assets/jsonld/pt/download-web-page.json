@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Baixar Wordfeud Helper",
+  "description": "Baixe e instale o Wordfeud Helper como um aplicativo no Mac, PC, iPhone ou Android. PWA gratuita com funcionalidade offline.",
+  "url": "https://wordfeud.jonasvindahl.dev/pt/download/",
+  "inLanguage": "pt-PT",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Wordfeud Helper Portugu\u00eas",
+    "url": "https://wordfeud.jonasvindahl.dev/pt/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Jonas Vindahl Bang",
+    "url": "https://jonasvindahl.dev/"
+  }
+}

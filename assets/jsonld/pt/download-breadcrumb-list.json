@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "In\u00edcio",
+      "item": "https://wordfeud.jonasvindahl.dev/pt/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Baixar",
+      "item": "https://wordfeud.jonasvindahl.dev/pt/download/"
+    }
+  ]
+}

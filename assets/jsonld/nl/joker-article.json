@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wordfeud jokerteken \u2013 hoe je ? gebruikt en de beste woorden vindt",
+  "description": "Leer hoe jokertekens (?) werken in Wordfeud: waarvoor ze kunnen worden gebruikt, concrete strategie\u00ebn en voorbeelden \u2013 en hoe je jokerwoorden vindt met Wordfeud Helper.",
+  "author": {
+    "@type": "Person",
+    "name": "Jonas Vindahl Bang",
+    "url": "https://jonasvindahl.dev/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wordfeud Helper Nederlands",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://wordfeud.jonasvindahl.dev/assets/images/og-image.svg"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://wordfeud.jonasvindahl.dev/nl/joker/"
+  },
+  "inLanguage": "nl-NL",
+  "keywords": "wordfeud jokerteken, wordfeud blanco steen, jokerteken wordfeud, scrabble jokerteken, wordfeud strategie\u00ebn"
+}

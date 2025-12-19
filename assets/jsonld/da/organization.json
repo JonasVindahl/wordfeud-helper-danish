@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Wordfeud Hjælper Dansk",
+  "alternateName": "Wordfeud DK",
+  "url": "https://wordfeud.jonasvindahl.dev/",
+  "logo": "https://wordfeud.jonasvindahl.dev/web-app-manifest-512x512.png",
+  "description": "Gratis dansk Wordfeud og Scrabble hjælper. Find de bedste ord og få højeste point med dansk ordliste.",
+  "founder": {
+    "@type": "Person",
+    "name": "Jonas Vindahl Bang",
+    "url": "https://jonasvindahl.dev/"
+  },
+  "sameAs": [
+    "https://jonasvindahl.dev/"
+  ]
+}

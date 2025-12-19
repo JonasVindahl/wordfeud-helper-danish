@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vad \u00e4r Wordfeud Helper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wordfeud Helper \u00e4r ett gratis verktyg som hj\u00e4lper dig hitta giltiga svenska ord i Wordfeud. Skriv in dina bokst\u00e4ver, anv\u00e4nd jokrar (?), s\u00f6k med m\u00f6nster som * och ., och sortera ord efter po\u00e4ng och l\u00e4ngd. Verktyget \u00e4r snabbt, reklamfritt och optimerat f\u00f6r b\u00e5de mobil och surfplatta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur fungerar jokrar i Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jokern (?) kan anv\u00e4ndas som vilken bokstav som helst. N\u00e4r du skriver in dina bokst\u00e4ver kan du anv\u00e4nda ? f\u00f6r att representera en blank bricka. Till exempel: om du har bokst\u00e4verna TRA?NS kommer jokern automatiskt prova alla m\u00f6jliga bokst\u00e4ver f\u00f6r att hitta giltiga ord som TR\u00c4NS, TRANS, etc."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan man s\u00f6ka med m\u00f6nster i Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja! Du kan anv\u00e4nda m\u00f6nster f\u00f6r att beskriva ord som redan finns p\u00e5 br\u00e4det. Anv\u00e4nd . f\u00f6r exakt en valfri bokstav, och * f\u00f6r 0 eller fler bokst\u00e4ver. Till exempel: M* hittar ord som b\u00f6rjar med M, och ..A* hittar ord d\u00e4r tredje bokstaven \u00e4r A."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "\u00c4r Wordfeud Helper gratis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, Wordfeud Helper \u00e4r 100% gratis. Det finns inga annonser, inga dolda avgifter, och du beh\u00f6ver inte skapa ett konto. Verktyget fungerar \u00e4ven offline efter f\u00f6rsta g\u00e5ngen du har anv\u00e4nt det."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vilka svenska ord \u00e4r till\u00e5tna i Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wordfeud Helper anv\u00e4nder en omfattande svensk ordlista med giltiga ord. Ordlistan inneh\u00e5ller vanliga svenska ord och varianter optimerade f\u00f6r Wordfeud och Scrabble."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur r\u00e4knas po\u00e4ng i Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Varje bokstav har ett v\u00e4rde, och po\u00e4ngen visas f\u00f6r varje ord i resultaten. Verktyget r\u00e4knar automatiskt ut po\u00e4ng baserat p\u00e5 Wordfeud officiella po\u00e4ngsystem. Du kan sortera resultaten efter h\u00f6gsta po\u00e4ng f\u00f6r att hitta de mest v\u00e4rdefulla orden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Samlar ni in min data eller de ord jag s\u00f6ker p\u00e5?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nej. Vi anv\u00e4nder endast anonym statistik f\u00f6r att f\u00f6rb\u00e4ttra appen (t.ex. vilka funktioner som anv\u00e4nds mest). Vi lagrar INTE dina bokst\u00e4ver, ord eller s\u00f6kningar. Inga cookies, ingen personlig data, ingen sp\u00e5rning mellan webbplatser. All data behandlas lokalt i din webbl\u00e4sare och skickas aldrig till n\u00e5gon server."
+      }
+    }
+  ]
+}

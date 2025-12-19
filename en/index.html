@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
 
     <meta charset="UTF-8">
@@ -14,13 +14,13 @@
     <!-- Security: CSP (strict) + external JSON-LD (no inline scripts) -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://umami.jonasvindahl.dev https://static.cloudflareinsights.com 'sha256-XWztlj8GMtpnbPMkzakNXtv/fE8OnGTxhYMHcEixNcI='; style-src 'self' 'unsafe-inline'; worker-src 'self'; connect-src 'self' https://umami.jonasvindahl.dev https://static.cloudflareinsights.com https://cloudflareinsights.com; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
 
-    <title>Wordfeud Hjælper – danske ord med joker og mønster</title>
+    <title>Wordfeud Helper – English words with wildcards and patterns</title>
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Wordfeud DK">
-    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Wordfeud EN">
+    <link rel="manifest" href="/en/manifest.json" />
     <meta name="theme-color" content="#0D5AA8">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -35,10 +35,10 @@
     <!-- End Cloudflare Web Analytics -->
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Gratis dansk Wordfeud/Scrabble hjælper. Find ord med joker (?), mønster (.) og wildcard (*). Hurtig, reklamefri og mobilvenlig – virker offline.">
-    <meta name="keywords" content="wordfeud hjælper, wordfeud dansk, scrabble hjælper, ordhjælper, danske ord, wordfeud snyd, wordfeud hjælp, ordspil hjælper, wordfeud calculator">
+    <meta name="description" content="Free English Wordfeud/Scrabble helper. Find words with wildcards (?), patterns (.) and wildcard (*). Fast, ad-free and mobile-friendly – works offline.">
+    <meta name="keywords" content="wordfeud helper, wordfeud english, scrabble helper, word helper, english words, wordfeud cheat, wordfeud help, word game helper, wordfeud calculator">
     <meta name="author" content="Jonas Vindahl Bang">
-    <link rel="canonical" href="https://wordfeud.jonasvindahl.dev/">
+    <link rel="canonical" href="https://wordfeud.jonasvindahl.dev/en/">
     <meta name="robots" content="index, follow">
 
     <!-- Language Alternates for SEO -->
@@ -51,18 +51,18 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://wordfeud.jonasvindahl.dev/">
-    <meta property="og:title" content="Wordfeud Hjælper – danske ord med joker og mønster">
-    <meta property="og:description" content="Gratis dansk Wordfeud/Scrabble hjælper. Find ord med joker (?), mønster (.) og wildcard (*). Hurtig, reklamefri og mobilvenlig.">
+    <meta property="og:url" content="https://wordfeud.jonasvindahl.dev/en/">
+    <meta property="og:title" content="Wordfeud Helper – English words with wildcards and patterns">
+    <meta property="og:description" content="Free English Wordfeud/Scrabble helper. Find words with wildcards (?), patterns (.) and wildcard (*). Fast, ad-free and mobile-friendly.">
     <meta property="og:image" content="https://wordfeud.jonasvindahl.dev/web-app-manifest-512x512.png">
-    <meta property="og:locale" content="da_DK">
-    <meta property="og:site_name" content="Wordfeud Hjælper Dansk">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Wordfeud Helper English">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://wordfeud.jonasvindahl.dev/">
-    <meta name="twitter:title" content="Wordfeud Hjælper – danske ord med joker og mønster">
-    <meta name="twitter:description" content="Gratis dansk Wordfeud/Scrabble hjælper. Find ord med joker (?), mønster (.) og wildcard (*). Hurtig, reklamefri og mobilvenlig.">
+    <meta name="twitter:url" content="https://wordfeud.jonasvindahl.dev/en/">
+    <meta name="twitter:title" content="Wordfeud Helper – English words with wildcards and patterns">
+    <meta name="twitter:description" content="Free English Wordfeud/Scrabble helper. Find words with wildcards (?), patterns (.) and wildcard (*). Fast, ad-free and mobile-friendly.">
     <meta name="twitter:image" content="https://wordfeud.jonasvindahl.dev/web-app-manifest-512x512.png">
 
     <!-- Stylesheet - v10 with Grid-based CLS fix (no LCP regression) -->
@@ -73,16 +73,16 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Wordfeud Hjælper Dansk",
-  "alternateName": "Wordfeud DK",
-  "url": "https://wordfeud.jonasvindahl.dev/",
+  "name": "Wordfeud Helper English",
+  "alternateName": "Wordfeud EN",
+  "url": "https://wordfeud.jonasvindahl.dev/en/",
   "logo": {
     "@type": "ImageObject",
     "url": "https://wordfeud.jonasvindahl.dev/web-app-manifest-512x512.png",
     "width": 512,
     "height": 512
   },
-  "description": "Gratis dansk Wordfeud og Scrabble hjælper. Find de bedste ord og få højeste point med dansk ordliste.",
+  "description": "Free English Wordfeud and Scrabble helper. Find the best words and get the highest points with English word list.",
   "founder": {
     "@type": "Person",
     "name": "Jonas Vindahl Bang",
@@ -99,31 +99,31 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Wordfeud Hjælper Dansk",
-  "alternateName": "Wordfeud DK",
-  "description": "Gratis dansk Wordfeud og Scrabble hjælper. Find de bedste ord og få højeste point med dansk ordliste.",
-  "url": "https://wordfeud.jonasvindahl.dev/",
+  "name": "Wordfeud Helper English",
+  "alternateName": "Wordfeud EN",
+  "description": "Free English Wordfeud and Scrabble helper. Find the best words and get the highest points with English word list.",
+  "url": "https://wordfeud.jonasvindahl.dev/en/",
   "applicationCategory": "GameApplication",
   "operatingSystem": "All",
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "DKK"
+    "priceCurrency": "USD"
   },
   "author": {
     "@type": "Person",
     "name": "Jonas Vindahl Bang",
     "url": "https://jonasvindahl.dev/"
   },
-  "inLanguage": "da-DK",
+  "inLanguage": "en-US",
   "browserRequirements": "Requires JavaScript. Requires HTML5.",
   "softwareVersion": "1.0",
   "audience": {
     "@type": "Audience",
-    "audienceType": "Wordfeud og Scrabble spillere",
+    "audienceType": "Wordfeud and Scrabble players",
     "geographicArea": {
       "@type": "Country",
-      "name": "Danmark"
+      "name": "United States"
     }
   },
   "aggregateRating": {
@@ -131,8 +131,8 @@
     "ratingValue": "5",
     "ratingCount": "1"
   },
-  "keywords": "wordfeud, scrabble, ordhjælper, dansk, ordspil, wordfeud hjælper",
-  "featureList": "Dansk ordliste, Offline support, Pattern matching, Point calculator, PWA"
+  "keywords": "wordfeud, scrabble, word helper, english, word game, wordfeud helper",
+  "featureList": "English word list, Offline support, Pattern matching, Point calculator, PWA"
 }
     </script>
 
@@ -144,58 +144,58 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hvad er Wordfeud Hjælper?",
+      "name": "What is Wordfeud Helper?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wordfeud Hjælper er et gratis værktøj, der hjælper dig med at finde gyldige danske ord i Wordfeud. Indtast dine bogstaver, brug joker (?), søg med mønstre som * og ., og sorter ord efter point og længde. Værktøjet er hurtigt, reklamefrit og optimeret til både mobil og tablet."
+        "text": "Wordfeud Helper is a free tool that helps you find valid English words in Wordfeud. Enter your letters, use wildcards (?), search with patterns like * and ., and sort words by points and length. The tool is fast, ad-free and optimized for both mobile and tablet."
       }
     },
     {
       "@type": "Question",
-      "name": "Hvordan virker joker i Wordfeud?",
+      "name": "How do wildcards work in Wordfeud?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jokeren (?) kan bruges som et vilkårligt bogstav. Når du indtaster dine bogstaver, kan du bruge ? til at repræsentere en blank brik. For eksempel: hvis du har bogstaverne TRÆ?ON, vil jokeren automatisk prøve alle mulige bogstaver for at finde gyldige ord som TRÆTON, TRÆDON osv."
+        "text": "The wildcard (?) can be used as any letter. When you enter your letters, you can use ? to represent a blank tile. For example: if you have the letters TRA?NS, the wildcard will automatically try all possible letters to find valid words like TRAINS, TRAINS, etc."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan man søge med mønstre i Wordfeud?",
+      "name": "Can you search with patterns in Wordfeud?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja! Du kan bruge mønstre til at beskrive ord der allerede ligger på brættet. Brug . for præcis ét vilkårligt bogstav, og * for 0 eller flere bogstaver. For eksempel: M* finder ord der starter med M, og ..A* finder ord hvor det 3. bogstav er A."
+        "text": "Yes! You can use patterns to describe words already on the board. Use . for exactly one any letter, and * for 0 or more letters. For example: M* finds words starting with M, and ..A* finds words where the 3rd letter is A."
       }
     },
     {
       "@type": "Question",
-      "name": "Er Wordfeud Hjælper gratis?",
+      "name": "Is Wordfeud Helper free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, Wordfeud Hjælper er 100% gratis. Der er ingen reklamer, ingen skjulte gebyrer, og du behøver ikke at oprette en konto. Værktøjet virker også offline efter første gang du har brugt det."
+        "text": "Yes, Wordfeud Helper is 100% free. There are no ads, no hidden fees, and you don't need to create an account. The tool also works offline after the first time you've used it."
       }
     },
     {
       "@type": "Question",
-      "name": "Hvilke danske ord er tilladt i Wordfeud?",
+      "name": "Which English words are allowed in Wordfeud?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wordfeud Hjælper bruger en omfattende dansk ordliste med over 400.000 gyldige ord. Ordlisten inkluderer almindelige danske ord og bøjninger fra Den Danske Ordbog og er optimeret til Wordfeud og Scrabble."
+        "text": "Wordfeud Helper uses a comprehensive English word list with valid words. The word list includes common English words and variations optimized for Wordfeud and Scrabble."
       }
     },
     {
       "@type": "Question",
-      "name": "Hvordan beregnes point i Wordfeud?",
+      "name": "How are points calculated in Wordfeud?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hvert bogstav har en værdi, og pointene vises ved hvert ord i resultaterne. Værktøjet beregner automatisk pointene baseret på Wordfeud's officielle pointsystem. Du kan sortere resultaterne efter højeste point for at finde de mest værdifulde ord."
+        "text": "Each letter has a value, and the points are shown for each word in the results. The tool automatically calculates points based on Wordfeud's official point system. You can sort the results by highest points to find the most valuable words."
       }
     },
     {
       "@type": "Question",
-      "name": "Indsamler I mine data eller de ord jeg søger?",
+      "name": "Do you collect my data or the words I search for?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nej. Vi bruger kun anonym statistik til at forbedre appen (f.eks. hvilke funktioner der bruges mest). Vi gemmer IKKE dine bogstaver, ord eller søgninger. Ingen cookies, ingen persondata, ingen tracking på tværs af sider. Alt data behandles lokalt i din browser og bliver aldrig sendt til nogen server."
+        "text": "No. We only use anonymous statistics to improve the app (e.g. which features are used most). We do NOT store your letters, words or searches. No cookies, no personal data, no cross-site tracking. All data is processed locally in your browser and is never sent to any server."
       }
     }
   ]
@@ -204,19 +204,19 @@
 </head>
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-to-content">Spring til hovedindhold</a>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
     <div class="page-bg"></div>
     <div class="container">
         <header>
             <div class="header-top">
                 <div class="header-title-group">
-                    <h1>Wordfeud Hjælper Dansk</h1>
-                    <p class="subtitle">Find de bedste danske ord til Wordfeud og Scrabble</p>
+                    <h1>Wordfeud Helper English</h1>
+                    <p class="subtitle">Find the best English words for Wordfeud and Scrabble</p>
                 </div>
                 <div class="header-badges" aria-hidden="true">
-                    <span class="badge badge-primary">DK-ordliste</span>
-                    <span class="badge badge-soft">Offline-klar</span>
+                    <span class="badge badge-primary">EN dictionary</span>
+                    <span class="badge badge-soft">Offline ready</span>
                 </div>
             </div>
 
@@ -224,7 +224,7 @@
             <div class="language-switcher">
                 <button class="lang-switcher-btn" id="lang-switcher-btn" aria-label="Change language" data-track="lang_switcher_open">
                     <span class="lang-icon">🌐</span>
-                    <span class="lang-current" id="lang-current">DA</span>
+                    <span class="lang-current" id="lang-current">EN</span>
                 </button>
                 <div class="lang-dropdown" id="lang-dropdown" style="display: none;">
                     <a href="/" class="lang-option" data-lang="da">🇩🇰 Dansk</a>
@@ -243,8 +243,8 @@
             <!-- Loading State for Wordlist -->
             <div id="wordlist-loading" class="loading-container" aria-live="polite">
                 <div class="loading-spinner"></div>
-                <p>Indlæser ordliste... <span id="loading-progress">0%</span></p>
-                <p class="loading-subtext">Første gang kan tage lidt længere tid – derefter går det hurtigt.</p>
+                <p>Loading word list... <span id="loading-progress">0%</span></p>
+                <p class="loading-subtext">First time may take a bit longer – after that it's fast.</p>
             </div>
 
             <!-- Main App (behind loading screen initially) -->
@@ -255,22 +255,22 @@
                         <div class="section-header">
                             <h2 class="section-title section-title-with-icon" id="control-panel-heading">
                                 <span class="section-icon icon-letters" aria-hidden="true">🔍</span>
-                                Søgning
+                                Search
                             </h2>
-                            <span class="section-subtitle">Indtast dine bogstaver og juster filtre</span>
+                            <span class="section-subtitle">Enter your letters and adjust filters</span>
                         </div>
 
                         <!-- Main inputs in compact grid -->
                         <div class="compact-inputs-grid">
-                            <!-- Bogstaver -->
+                            <!-- Letters -->
                             <div class="input-group">
-                                <label for="letters-input" class="compact-label">Dine bogstaver</label>
+                                <label for="letters-input" class="compact-label">Your letters</label>
                                 <div class="input-with-clear">
                                     <input
                                         type="text"
                                         id="letters-input"
                                         maxlength="15"
-                                        placeholder="Fx: TRÆ?ON"
+                                        placeholder="E.g.: TRA?NS"
                                         autocomplete="off"
                                     >
                                     <button
@@ -278,7 +278,7 @@
                                         class="input-clear-btn"
                                         id="clear-letters-btn"
                                         style="display: none;"
-                                        aria-label="Ryd"
+                                        aria-label="Clear"
                                         data-track="clear_letters"
                                     >
                                         &times;
@@ -286,9 +286,9 @@
                                 </div>
                             </div>
 
-                            <!-- Joker button -->
+                            <!-- Wildcard button -->
                             <div class="input-group compact-btn-group">
-                                <label class="compact-label">Joker</label>
+                                <label class="compact-label">Wildcard</label>
                                 <button type="button" class="quick-btn scrabble-tile joker-btn compact-joker" data-char="?" data-target="letters-input" data-track="insert_joker">
                                     <span class="tile-letter">?</span>
                                 </button>
@@ -296,14 +296,14 @@
                         </div>
 
                         <div class="compact-inputs-grid">
-                            <!-- På bordet -->
+                            <!-- On board -->
                             <div class="input-group">
-                                <label for="board-pattern-input" class="compact-label">På bordet</label>
+                                <label for="board-pattern-input" class="compact-label">On board</label>
                                 <div class="input-with-clear">
                                     <input
                                         type="text"
                                         id="board-pattern-input"
-                                        placeholder="Fx: M..E*"
+                                        placeholder="E.g.: M..E*"
                                         autocomplete="off"
                                     >
                                     <button
@@ -311,7 +311,7 @@
                                         class="input-clear-btn"
                                         id="clear-board-btn"
                                         style="display: none;"
-                                        aria-label="Ryd"
+                                        aria-label="Clear"
                                         data-track="clear_board"
                                     >
                                         &times;
@@ -321,7 +321,7 @@
 
                             <!-- Pattern buttons -->
                             <div class="input-group compact-btn-group">
-                                <label class="compact-label">Mønstre</label>
+                                <label class="compact-label">Patterns</label>
                                 <div class="compact-pattern-btns">
                                     <button type="button" class="quick-btn pattern-btn single-char-btn" data-char="." data-target="board-pattern-input" data-track="insert_dot">
                                         <span class="btn-icon">.</span>
@@ -337,14 +337,14 @@
                         <div class="compact-filters-row">
                             <!-- Length Filter - dropdown based -->
                             <div class="compact-filter">
-                                <label for="length-mode-select" class="compact-label">Længde-filter</label>
+                                <label for="length-mode-select" class="compact-label">Length filter</label>
                                 <select id="length-mode-select" class="compact-select">
-                                    <option value="all">Standard: Alle længder</option>
-                                    <option value="exact">Præcis længde</option>
-                                    <option value="range">Min-max interval</option>
+                                    <option value="all">Default: All lengths</option>
+                                    <option value="exact">Exact length</option>
+                                    <option value="range">Min-max range</option>
                                 </select>
                                 <div class="length-inputs compact-length-inputs" style="display: none;">
-                                    <input type="number" id="exact-length" min="2" max="15" placeholder="Præcis" style="display: none;">
+                                    <input type="number" id="exact-length" min="2" max="15" placeholder="Exact" style="display: none;">
                                     <input type="number" id="min-length" min="2" max="15" placeholder="Min" style="display: none;">
                                     <input type="number" id="max-length" min="2" max="15" placeholder="Max" style="display: none;">
                                 </div>
@@ -352,11 +352,11 @@
 
                             <!-- Sorting -->
                             <div class="compact-filter">
-                                <label for="sort-select" class="compact-label">Sorter efter</label>
+                                <label for="sort-select" class="compact-label">Sort by</label>
                                 <select id="sort-select" class="compact-select">
-                                    <option value="score">Point (højeste først)</option>
-                                    <option value="length">Længde (længst først)</option>
-                                    <option value="alpha">Alfabetisk (A-Å)</option>
+                                    <option value="score">Points (highest first)</option>
+                                    <option value="length">Length (longest first)</option>
+                                    <option value="alpha">Alphabetical (A-Z)</option>
                                 </select>
                             </div>
                         </div>
@@ -366,14 +366,14 @@
                         <div class="actions-integrated">
                             <div class="button-with-hint">
                                 <button id="search-button" class="btn btn-primary" type="button" disabled data-track="solve">
-                                    Find ord
+                                    Find words
                                 </button>
                                 <p id="search-button-hint" class="button-hint" style="display: block;">
-                                    <!-- Skriv mindst ét bogstav for at søge. -->
+                                    <!-- Enter at least one letter to search. -->
                                 </p>
                             </div>
-                            <button id="clear-button" class="btn btn-secondary" type="button" title="Nulstiller både bogstaver, mønster og filtre" data-track="clear_all">
-                                Ryd alt
+                            <button id="clear-button" class="btn btn-secondary" type="button" title="Reset letters, pattern and filters" data-track="clear_all">
+                                Clear all
                             </button>
                         </div>
 
@@ -382,7 +382,7 @@
 
                         <div id="search-loading" class="search-loading" style="display: none;" aria-live="polite">
                             <div class="loading-spinner small" aria-hidden="true"></div>
-                            <span>Søger efter mulige ord...</span>
+                            <span>Searching for possible words...</span>
                         </div>
 
                         <div id="results-preview" class="results-preview" style="display: none;" aria-live="polite">
@@ -398,20 +398,20 @@
                         <div class="section-header">
                             <h2 class="section-title section-title-with-icon" id="results-heading">
                                 <span class="section-icon icon-results" aria-hidden="true">✓</span>
-                                Resultater
+                                Results
                             </h2>
-                            <span class="section-subtitle">Klik på et ord for at kopiere det</span>
+                            <span class="section-subtitle">Click on a word to copy it</span>
                         </div>
                         <p id="results-summary" aria-live="polite"></p>
                     </div>
 
-                    <div class="results-container" role="region" aria-label="Liste med forslag">
+                    <div class="results-container" role="region" aria-label="List of suggestions">
                         <table id="results-table">
                             <thead>
                                 <tr>
-                                    <th scope="col">Ord</th>
-                                    <th scope="col">Point</th>
-                                    <th scope="col">Længde</th>
+                                    <th scope="col">Word</th>
+                                    <th scope="col">Points</th>
+                                    <th scope="col">Length</th>
                                 </tr>
                             </thead>
                             <tbody id="results-body">
@@ -421,20 +421,20 @@
 
                     <!-- Pagination -->
                     <div id="pagination" class="pagination" style="display: none;">
-                        <button id="prev-page" class="btn btn-small" type="button" data-track="page_prev">Forrige</button>
+                        <button id="prev-page" class="btn btn-small" type="button" data-track="page_prev">Previous</button>
                         <span id="page-info"></span>
-                        <button id="next-page" class="btn btn-small" type="button" data-track="page_next">Næste</button>
+                        <button id="next-page" class="btn btn-small" type="button" data-track="page_next">Next</button>
                     </div>
                 </section>
 
                 <!-- Guide Section (Collapsible) -->
-                <section class="guide-section ui-block" aria-label="Hjælp og eksempler">
+                <section class="guide-section ui-block" aria-label="Help and examples">
                     <button class="guide-header" id="guide-toggle" type="button" aria-expanded="true" aria-controls="guide-content" data-track="help_toggle">
                         <div class="guide-header-content">
                             <span class="guide-icon icon-guide" aria-hidden="true">?</span>
                             <div>
-                                <h3>Sådan bruger du Wordfeud Hjælper</h3>
-                                <p class="guide-subtitle">En kort guide til bogstaver, mønstre og eksempler</p>
+                                <h3>How to use Wordfeud Helper</h3>
+                                <p class="guide-subtitle">A quick guide to letters, patterns and examples</p>
                             </div>
                         </div>
                         <span class="guide-toggle-icon" aria-hidden="true">▼</span>
@@ -445,146 +445,146 @@
                         <!-- Quick steps -->
                          <nav class="ui-block" aria-label="Guides">
                             <p>
-                                👉 <a href="/joker">Guide: sådan bruger du joker (?) i Wordfeud</a>
+                                👉 <a href="/en/joker">Guide: how to use wildcards (?) in Wordfeud</a>
                             </p>
                         </nav>
                         <ol class="info-steps">
                             <li>
-                                <strong>Indtast dine bogstaver</strong> i “Dine bogstaver”.  
-                                Brug <code>?</code> som joker (kan være hvilket som helst bogstav).
+                                <strong>Enter your letters</strong> in "Your letters".
+                                Use <code>?</code> as wildcard (can be any letter).
                             </li>
 
                             <li>
-                                <strong>Beskriv feltet på brættet</strong> i “På bordet (mønster)”.  
-                                Her fortæller du, hvordan ordet skal passe ind i det, der allerede ligger.
+                                <strong>Describe the board position</strong> in "On board (pattern)".
+                                Here you describe how the word should fit into what's already on the board.
                             </li>
 
                             <li>
-                                <strong>Finjustér længde og sortering</strong> hvis du vil have færre, mere præcise forslag,  
-                                og tryk derefter på <strong>“Find ord”</strong>.
+                                <strong>Fine-tune length and sorting</strong> if you want fewer, more precise suggestions,
+                                then click <strong>"Find words"</strong>.
                             </li>
                         </ol>
 
                         <!-- What patterns are -->
-                        <h4>Hvad er et mønster?</h4>
+                        <h4>What is a pattern?</h4>
                         <p class="help-text">
-                            Et mønster er en lille “skabelon”, der beskriver hvordan ordet skal ligge på brættet.
-                            Du kombinerer faste bogstaver med joker-tegn:
+                            A pattern is a small "template" that describes how the word should be positioned on the board.
+                            You combine fixed letters with wildcard characters:
                         </p>
 
                         <ul class="help-list">
-                            <li><code>A</code>, <code>GE</code> – bogstaver der allerede ligger på brættet</li>
-                            <li><code>.</code> – præcis <strong>ét</strong> vilkårligt bogstav</li>
-                            <li><code>*</code> – <strong>0 eller flere</strong> vilkårlige bogstaver (resten af ordet)</li>
+                            <li><code>A</code>, <code>GE</code> – letters already on the board</li>
+                            <li><code>.</code> – exactly <strong>one</strong> any letter</li>
+                            <li><code>*</code> – <strong>0 or more</strong> any letters (rest of the word)</li>
                         </ul>
 
                         <!-- Visual examples -->
-                        <h4>Eksempler på mønstre</h4>
+                        <h4>Pattern examples</h4>
                         <ul class="help-list examples">
 
                             <li>
-                                <code>M*</code> → ord der <strong>starter med M</strong>  
-                                <div class="example-sub">Eksempler: <em>MAND</em>, <em>MERE</em>, <em>MORGEN</em></div>
-                                <div class="example-explain">Bruges når du kan lægge ordet sådan her: <code>M _ _ _</code></div>
+                                <code>M*</code> → words <strong>starting with M</strong>
+                                <div class="example-sub">Examples: <em>MAKE</em>, <em>MORE</em>, <em>MORNING</em></div>
+                                <div class="example-explain">Used when you can place the word like this: <code>M _ _ _</code></div>
                             </li>
 
                             <li>
-                                <code>*D</code> → ord der <strong>slutter på D</strong>  
-                                <div class="example-sub">Eksempler: <em>HUND</em>, <em>BRØD</em>, <em>MAND</em></div>
-                                <div class="example-explain">Bruges når der er et D i slutningen: <code>_ _ _ D</code></div>
+                                <code>*D</code> → words <strong>ending with D</strong>
+                                <div class="example-sub">Examples: <em>WORD</em>, <em>SEND</em>, <em>FIND</em></div>
+                                <div class="example-explain">Used when there's a D at the end: <code>_ _ _ D</code></div>
                             </li>
 
                             <li>
-                                <code>M..GE*</code> → M + 2 bogstaver + GE + evt. ekstra  
-                                <div class="example-sub">Eksempler: <em>MANGES</em>, <em>MANGEL</em></div>
-                                <div class="example-explain">Brættet ligner f.eks.: <code>M _ _ G E _</code></div>
+                                <code>M..GE*</code> → M + 2 letters + GE + optional extra
+                                <div class="example-sub">Examples: <em>MANAGE</em>, <em>MANGER</em></div>
+                                <div class="example-explain">The board looks like: <code>M _ _ G E _</code></div>
                             </li>
 
                             <li>
-                                <code>..A*</code> → mindst 3 bogstaver, hvor det 3. er A  
-                                <div class="example-sub">Eksempler: <em>FLASKE</em>, <em>GRATIS</em></div>
-                                <div class="example-explain">Brættet ligner: <code>_ _ A _ _ _</code></div>
+                                <code>..A*</code> → at least 3 letters, where the 3rd is A
+                                <div class="example-sub">Examples: <em>BOARD</em>, <em>TRADE</em></div>
+                                <div class="example-explain">The board looks like: <code>_ _ A _ _ _</code></div>
                             </li>
 
                         </ul>
 
                         <!-- Final tip -->
                         <p class="help-text help-tip" style="margin-top: 14px;">
-                            <strong class="tip-label">Tip:</strong> Jo mere præcist dit mønster er, jo kortere og mere brugbar bliver listen med forslag.
+                            <strong class="tip-label">Tip:</strong> The more precise your pattern is, the shorter and more useful the list of suggestions will be.
                         </p>
                     </div>
                 </section>
 
                 <!-- FAQ Section (SEO) -->
-                <section class="faq-section ui-block" aria-label="Ofte stillede spørgsmål">
+                <section class="faq-section ui-block" aria-label="Frequently asked questions">
                     <div class="section-header">
                         <h2 class="section-title section-title-with-icon">
                             <span class="section-icon" aria-hidden="true">💬</span>
-                            Ofte stillede spørgsmål
+                            Frequently Asked Questions
                         </h2>
                     </div>
 
                     <div class="faq-list">
                         <div class="faq-item">
-                            <h3 class="faq-question">Hvad er Wordfeud Hjælper?</h3>
+                            <h3 class="faq-question">What is Wordfeud Helper?</h3>
                             <p class="faq-answer">
-                                Wordfeud Hjælper er et gratis værktøj, der hjælper dig med at finde gyldige danske ord i Wordfeud.
-                                Indtast dine bogstaver, brug joker (<code>?</code>), søg med mønstre som <code>*</code> og <code>.</code>,
-                                og sorter ord efter point og længde. Værktøjet er hurtigt, reklamefrit og optimeret til både mobil og tablet.
+                                Wordfeud Helper is a free tool that helps you find valid English words in Wordfeud.
+                                Enter your letters, use wildcards (<code>?</code>), search with patterns like <code>*</code> and <code>.</code>,
+                                and sort words by points and length. The tool is fast, ad-free and optimized for both mobile and tablet.
                             </p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Hvordan virker joker i Wordfeud?</h3>
+                            <h3 class="faq-question">How do wildcards work in Wordfeud?</h3>
                             <p class="faq-answer">
-                                Jokeren (<code>?</code>) kan bruges som et vilkårligt bogstav.
-                                Når du indtaster dine bogstaver, kan du bruge <code>?</code> til at repræsentere en blank brik.
-                                For eksempel: hvis du har bogstaverne <code>TRÆ?ON</code>, vil jokeren automatisk prøve alle mulige bogstaver
-                                for at finde gyldige ord som TRÆTON, TRÆDON osv.
+                                The wildcard (<code>?</code>) can be used as any letter.
+                                When you enter your letters, you can use <code>?</code> to represent a blank tile.
+                                For example: if you have the letters <code>TRA?NS</code>, the wildcard will automatically try all possible letters
+                                to find valid words like TRAINS, TRAINS, etc.
                             </p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Kan man søge med mønstre i Wordfeud?</h3>
+                            <h3 class="faq-question">Can you search with patterns in Wordfeud?</h3>
                             <p class="faq-answer">
-                                Ja! Du kan bruge mønstre til at beskrive ord der allerede ligger på brættet.
-                                Brug <code>.</code> for præcis ét vilkårligt bogstav, og <code>*</code> for 0 eller flere bogstaver.
-                                For eksempel: <code>M*</code> finder ord der starter med M, og <code>..A*</code> finder ord hvor
-                                det 3. bogstav er A.
+                                Yes! You can use patterns to describe words already on the board.
+                                Use <code>.</code> for exactly one any letter, and <code>*</code> for 0 or more letters.
+                                For example: <code>M*</code> finds words starting with M, and <code>..A*</code> finds words where
+                                the 3rd letter is A.
                             </p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Er Wordfeud Hjælper gratis?</h3>
+                            <h3 class="faq-question">Is Wordfeud Helper free?</h3>
                             <p class="faq-answer">
-                                Ja, Wordfeud Hjælper er 100% gratis. Der er ingen reklamer, ingen skjulte gebyrer,
-                                og du behøver ikke at oprette en konto. Værktøjet virker også offline efter første gang du har brugt det.
+                                Yes, Wordfeud Helper is 100% free. There are no ads, no hidden fees,
+                                and you don't need to create an account. The tool also works offline after the first time you've used it.
                             </p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Hvilke danske ord er tilladt i Wordfeud?</h3>
+                            <h3 class="faq-question">Which English words are allowed in Wordfeud?</h3>
                             <p class="faq-answer">
-                                Wordfeud Hjælper bruger en omfattende dansk ordliste med over 400.000 gyldige ord.
-                                Ordlisten inkluderer almindelige danske ord og bøjninger fra Den Danske Ordbog og er optimeret til Wordfeud og Scrabble.
+                                Wordfeud Helper uses a comprehensive English word list with valid words.
+                                The word list includes common English words and variations optimized for Wordfeud and Scrabble.
                             </p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Hvordan beregnes point i Wordfeud?</h3>
+                            <h3 class="faq-question">How are points calculated in Wordfeud?</h3>
                             <p class="faq-answer">
-                                Hvert bogstav har en værdi, og pointene vises ved hvert ord i resultaterne.
-                                Værktøjet beregner automatisk pointene baseret på Wordfeud's officielle pointsystem.
-                                Du kan sortere resultaterne efter højeste point for at finde de mest værdifulde ord.
+                                Each letter has a value, and the points are shown for each word in the results.
+                                The tool automatically calculates points based on Wordfeud's official point system.
+                                You can sort the results by highest points to find the most valuable words.
                             </p>
                         </div>
 
                         <div class="faq-item">
-                            <h3 class="faq-question">Indsamler I mine data eller de ord jeg søger?</h3>
+                            <h3 class="faq-question">Do you collect my data or the words I search for?</h3>
                             <p class="faq-answer">
-                                Nej. Vi bruger kun anonym statistik til at forbedre appen (f.eks. hvilke funktioner der bruges mest).
-                                Vi gemmer IKKE dine bogstaver, ord eller søgninger. Ingen cookies, ingen persondata, ingen tracking på tværs af sider.
-                                Alt data behandles lokalt i din browser og bliver aldrig sendt til nogen server.
+                                No. We only use anonymous statistics to improve the app (e.g. which features are used most).
+                                We do NOT store your letters, words or searches. No cookies, no personal data, no cross-site tracking.
+                                All data is processed locally in your browser and is never sent to any server.
                             </p>
                         </div>
                     </div>
@@ -594,15 +594,15 @@
         </main>
 
         <footer>
-            <p class="footer-seo">Et gratis dansk Wordfeud-værktøj til joker, mønstre og point.</p>
-            <p>Wordfeud Hjælper - hurtig, simpel og offline-klar.</p>
+            <p class="footer-seo">A free English Wordfeud tool for wildcards, patterns and points.</p>
+            <p>Wordfeud Helper - fast, simple and offline-ready.</p>
             <p>
-                <a href="/download" class="btn btn-primary btn-small" data-track="footer_download">📱 Download som app</a>
+                <a href="/en/download" class="btn btn-primary btn-small" data-track="footer_download">📱 Download as app</a>
             </p>
             <p>
-                Lavet af Jonas Vindahl Bang
+                Made by Jonas Vindahl Bang
                 <a href="https://jonasvindahl.dev/" data-track="author_link">(jonasvindahl.dev)</a>,
-                i samarbejde med AI.
+                in collaboration with AI.
             </p>
             <p id="app-version">
                 Version: <span id="version-number">...</span>
@@ -616,13 +616,13 @@
             <div class="install-prompt-text">
                 <div class="install-prompt-icon">📱</div>
                 <div>
-                    <strong>Installer som app</strong>
-                    <p>Få hurtig adgang og brug offline</p>
+                    <strong>Install as app</strong>
+                    <p>Get quick access and use offline</p>
                 </div>
             </div>
             <div class="install-prompt-actions">
-                <button id="install-button" class="btn btn-primary btn-small" data-track="install_prompt_install">Installer</button>
-                <button id="install-dismiss" class="btn btn-text btn-small" data-track="install_prompt_dismiss">Luk</button>
+                <button id="install-button" class="btn btn-primary btn-small" data-track="install_prompt_install">Install</button>
+                <button id="install-dismiss" class="btn btn-text btn-small" data-track="install_prompt_dismiss">Close</button>
             </div>
         </div>
     </div>
@@ -633,17 +633,17 @@
             <div class="install-prompt-text">
                 <div class="install-prompt-icon">📱</div>
                 <div>
-                    <strong>Installer på iPhone/iPad</strong>
-                    <p>Tryk på <span class="ios-share-icon">⎙</span> → "Føj til hjemmeskærm"</p>
+                    <strong>Install on iPhone/iPad</strong>
+                    <p>Tap <span class="ios-share-icon">⎙</span> → "Add to Home Screen"</p>
                 </div>
             </div>
             <div class="install-prompt-actions">
-                <button id="ios-install-dismiss" class="btn btn-text btn-small" data-track="ios_install_prompt_dismiss">Luk</button>
+                <button id="ios-install-dismiss" class="btn btn-text btn-small" data-track="ios_install_prompt_dismiss">Close</button>
             </div>
         </div>
     </div>
 
     <!-- Security: Moved inline script to external file to comply with strict CSP -->
-    <script type="module" src="./src/js/init.js"></script>
+    <script type="module" src="/src/js/init.js"></script>
 </body>
 </html>

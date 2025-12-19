@@ -2232,3 +2232,106 @@ footer a:hover {
 #update-later-btn:hover {
     background: rgba(255, 255, 255, 0.1);
 }
+
+/* ========================================
+   LANGUAGE SWITCHER
+   ======================================== */
+
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.lang-switcher-btn {
+    background: var(--surface-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    color: var(--text-color);
+}
+
+.lang-switcher-btn:hover {
+    background: var(--surface-hover);
+    border-color: var(--primary-color);
+}
+
+.lang-switcher-btn:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.lang-icon {
+    font-size: 18px;
+}
+
+.lang-current {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    background: var(--surface-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 180px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.lang-option {
+    display: block;
+    padding: 12px 16px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: background 0.2s ease;
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 500;
+}
+
+.lang-option:last-child {
+    border-bottom: none;
+}
+
+.lang-option:hover {
+    background: var(--surface-hover);
+}
+
+.lang-option:focus {
+    background: var(--primary-light);
+    outline: 2px solid var(--primary-color);
+    outline-offset: -2px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .language-switcher {
+        margin-top: 12px;
+    }
+
+    .lang-switcher-btn {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .lang-dropdown {
+        min-width: 160px;
+    }
+
+    .lang-option {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+}

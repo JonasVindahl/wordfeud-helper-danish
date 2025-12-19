@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Download Wordfeud Helper",
+  "description": "Download en installeer Wordfeud Helper als een app op Mac, PC, iPhone of Android. Gratis PWA met offline functionaliteit.",
+  "url": "https://wordfeud.jonasvindahl.dev/nl/download/",
+  "inLanguage": "nl-NL",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Wordfeud Helper Nederlands",
+    "url": "https://wordfeud.jonasvindahl.dev/nl/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Jonas Vindahl Bang",
+    "url": "https://jonasvindahl.dev/"
+  }
+}

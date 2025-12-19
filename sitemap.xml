@@ -1,29 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- Danish (Default) -->
   <url>
     <loc>https://wordfeud.jonasvindahl.dev/</loc>
-    <lastmod>2025-12-16</lastmod>
+    <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="da"
-      href="https://wordfeud.jonasvindahl.dev/" />
-    <xhtml:link rel="alternate" hreflang="x-default"
-      href="https://wordfeud.jonasvindahl.dev/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/" />
   </url>
 
-  <!-- 🔽 NY: Joker-side -->
   <url>
-    <loc>https://wordfeud.jonasvindahl.dev/joker</loc>
-    <lastmod>2025-12-16</lastmod>
+    <loc>https://wordfeud.jonasvindahl.dev/joker/</loc>
+    <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="da"
-      href="https://wordfeud.jonasvindahl.dev/joker" />
-    <xhtml:link rel="alternate" hreflang="x-default"
-      href="https://wordfeud.jonasvindahl.dev/joker" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/joker/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/joker/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/joker/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/joker/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/joker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/joker/" />
+  </url>
+
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/download/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/download/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/download/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/download/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/download/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/download/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/download/" />
+  </url>
+
+  <!-- English -->
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/en/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/" />
+  </url>
+
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/en/joker/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/joker/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/joker/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/joker/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/joker/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/joker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/joker/" />
+  </url>
+
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/en/download/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/download/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/download/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/download/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/download/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/download/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/download/" />
+  </url>
+
+  <!-- Portuguese -->
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/pt/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/" />
+  </url>
+
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/pt/joker/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/joker/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/joker/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/joker/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/joker/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/joker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/joker/" />
+  </url>
+
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/pt/download/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/download/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/download/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/download/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/download/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/download/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/download/" />
+  </url>
+
+  <!-- Dutch -->
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/nl/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/" />
+  </url>
+
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/nl/joker/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/joker/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/joker/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/joker/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/joker/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/joker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/joker/" />
+  </url>
+
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/nl/download/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/download/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/download/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/download/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/download/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/download/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/download/" />
+  </url>
+
+  <!-- Swedish -->
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/sv/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/" />
+  </url>
+
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/sv/joker/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/joker/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/joker/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/joker/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/joker/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/joker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/joker/" />
+  </url>
+
+  <url>
+    <loc>https://wordfeud.jonasvindahl.dev/sv/download/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="da" href="https://wordfeud.jonasvindahl.dev/download/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://wordfeud.jonasvindahl.dev/en/download/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wordfeud.jonasvindahl.dev/pt/download/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wordfeud.jonasvindahl.dev/nl/download/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://wordfeud.jonasvindahl.dev/sv/download/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wordfeud.jonasvindahl.dev/download/" />
   </url>
 
 </urlset>

@@ -1,0 +1,21 @@
+# Redirect language paths without trailing slash to version with trailing slash
+# This ensures canonical URLs and better SEO
+
+/en    /en/    301
+/pt    /pt/    301
+/nl    /nl/    301
+/sv    /sv/    301
+
+# Joker pages
+/joker         /joker/         301
+/en/joker      /en/joker/      301
+/pt/joker      /pt/joker/      301
+/nl/joker      /nl/joker/      301
+/sv/joker      /sv/joker/      301
+
+# Download pages
+/download      /download/      301
+/en/download   /en/download/   301
+/pt/download   /pt/download/   301
+/nl/download   /nl/download/   301
+/sv/download   /sv/download/   301

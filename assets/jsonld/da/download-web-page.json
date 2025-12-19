@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Download Wordfeud Hj\u00e6lper",
+  "description": "Download og installer Wordfeud Hj\u00e6lper som app p\u00e5 Mac, PC, iPhone eller Android. Gratis PWA med offline-funktionalitet.",
+  "url": "https://wordfeud.jonasvindahl.dev/download/",
+  "inLanguage": "da-DK",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Wordfeud Hj\u00e6lper Dansk",
+    "url": "https://wordfeud.jonasvindahl.dev/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Jonas Vindahl Bang",
+    "url": "https://jonasvindahl.dev/"
+  }
+}

@@ -1,10 +1,28 @@
 /**
  * Wordlist Loader
- * Handles loading and managing the Danish word list
+ * Handles loading and managing word lists for multiple languages
  */
+
+import { detectLanguage } from './i18n.js';
 
 let wordlist = [];
 let wordSet = null;
+
+/**
+ * Get wordlist path for current language
+ * @returns {string} Path to wordlist file
+ */
+function getWordlistPath() {
+    const lang = detectLanguage();
+
+    if (lang === 'da') {
+        // Danish at root (existing path)
+        return '/public/words.json';
+    }
+
+    // Other languages at language-specific path
+    return `/${lang}/public/words-${lang}.json`;
+}
 
 /**
  * Load wordlist from JSON file
@@ -15,7 +33,12 @@ export async function loadWordlist(progressCallback) {
     try {
         progressCallback?.(0);
 
-        const response = await fetch('public/words.json');
+        const wordlistPath = getWordlistPath();
+        const lang = detectLanguage();
+
+        console.log(`Loading wordlist for language: ${lang} from ${wordlistPath}`);
+
+        const response = await fetch(wordlistPath);
 
         if (!response.ok) {
             throw new Error(`Failed to load wordlist: ${response.status}`);
@@ -41,7 +64,7 @@ export async function loadWordlist(progressCallback) {
 
         progressCallback?.(100);
 
-        console.log(`Loaded ${wordlist.length} words`);
+        console.log(`Loaded ${wordlist.length} words for ${lang}`);
 
         return wordlist;
     } catch (error) {

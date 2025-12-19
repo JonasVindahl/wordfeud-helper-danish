@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que \u00e9 o Wordfeud Helper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wordfeud Helper \u00e9 uma ferramenta gratuita que ajuda voc\u00ea a encontrar palavras v\u00e1lidas em Portugu\u00eas no Wordfeud. Digite suas letras, use curingas (?), pesquise com padr\u00f5es como * e ., e ordene palavras por pontos e comprimento. A ferramenta \u00e9 r\u00e1pida, sem an\u00fancios e otimizada para mobile e tablet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como funcionam os curingas no Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O curinga (?) pode ser usado como qualquer letra. Quando voc\u00ea digita suas letras, pode usar ? para representar uma pe\u00e7a em branco. Por exemplo: se voc\u00ea tem as letras TRA?NS, o curinga tentar\u00e1 automaticamente todas as letras poss\u00edveis para encontrar palavras v\u00e1lidas como TRAINS, etc."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso pesquisar com padr\u00f5es no Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! Voc\u00ea pode usar padr\u00f5es para descrever palavras j\u00e1 no tabuleiro. Use . para exatamente uma letra qualquer, e * para 0 ou mais letras. Por exemplo: M* encontra palavras come\u00e7ando com M, e ..A* encontra palavras onde a 3\u00aa letra \u00e9 A."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O Wordfeud Helper \u00e9 gratuito?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, o Wordfeud Helper \u00e9 100% gratuito. N\u00e3o h\u00e1 an\u00fancios, taxas ocultas, e voc\u00ea n\u00e3o precisa criar uma conta. A ferramenta tamb\u00e9m funciona offline ap\u00f3s a primeira vez que voc\u00ea a usar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quais palavras em Portugu\u00eas s\u00e3o permitidas no Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O Wordfeud Helper usa uma lista abrangente de palavras em Portugu\u00eas com palavras v\u00e1lidas. A lista de palavras inclui palavras comuns em Portugu\u00eas e varia\u00e7\u00f5es otimizadas para Wordfeud e Scrabble."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como os pontos s\u00e3o calculados no Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cada letra tem um valor, e os pontos s\u00e3o mostrados para cada palavra nos resultados. A ferramenta calcula automaticamente os pontos com base no sistema oficial de pontos do Wordfeud. Voc\u00ea pode ordenar os resultados por pontos mais altos para encontrar as palavras mais valiosas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Voc\u00ea coleta meus dados ou as palavras que eu pesquiso?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "N\u00e3o. Usamos apenas estat\u00edsticas an\u00f4nimas para melhorar o aplicativo (por exemplo, quais recursos s\u00e3o mais usados). N\u00c3O armazenamos suas letras, palavras ou pesquisas. Sem cookies, sem dados pessoais, sem rastreamento entre sites. Todos os dados s\u00e3o processados localmente em seu navegador e nunca s\u00e3o enviados para nenhum servidor."
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wordfeud joker \u2013 hur ? fungerar och hur du anv\u00e4nder den effektivt",
+  "description": "L\u00e4r dig hur jokrar (?) fungerar i Wordfeud: vad de kan anv\u00e4ndas till, konkreta strategier och exempel \u2013 och hur man hittar jokerord med Wordfeud Helper.",
+  "author": {
+    "@type": "Person",
+    "name": "Jonas Vindahl Bang",
+    "url": "https://jonasvindahl.dev/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wordfeud Helper Svenska",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://wordfeud.jonasvindahl.dev/assets/images/og-image.svg"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://wordfeud.jonasvindahl.dev/sv/joker/"
+  },
+  "inLanguage": "sv-SE",
+  "keywords": "wordfeud joker, wordfeud blank bricka, joker wordfeud, scrabble joker, wordfeud strategier"
+}

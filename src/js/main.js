@@ -6,10 +6,61 @@
 import { loadWordlist } from './wordlistLoader.js';
 import { initUI, showAppContent, updateLoadingProgress, showLoadingError } from './ui-v2.js';
 import { trackPWAInstalled, trackPageLoad } from './analytics.js';
+import { loadTranslations, detectLanguage } from './i18n.js';
 
 // App version - synced with service worker cache name
 export const APP_VERSION = 'v33';
 export const APP_VERSION_DATE = '2025-12-16';
+
+/**
+ * Apply translations to the page
+ */
+async function applyTranslations() {
+    const lang = detectLanguage();
+
+    // Only apply translations for non-Danish languages
+    if (lang === 'da') {
+        return;
+    }
+
+    try {
+        const t = await loadTranslations();
+        console.log('📝 Applying translations for:', lang);
+
+        // Update page title
+        document.title = t.header.title;
+
+        // Update header
+        const h1 = document.querySelector('header h1');
+        if (h1) h1.textContent = t.header.title;
+
+        const subtitle = document.querySelector('header .subtitle');
+        if (subtitle) subtitle.textContent = t.header.subtitle;
+
+        // Update badges
+        const badges = document.querySelectorAll('.badge');
+        if (badges[0]) badges[0].textContent = t.header.badgeDictionary;
+        if (badges[1]) badges[1].textContent = t.header.badgeOffline;
+
+        // Update loading text - safely update without innerHTML
+        const loadingText = document.querySelector('#wordlist-loading p');
+        if (loadingText) {
+            const progressSpan = loadingText.querySelector('#loading-progress');
+            loadingText.textContent = t.wordlist.loading + ' ';
+            if (progressSpan) {
+                loadingText.appendChild(progressSpan);
+                progressSpan.textContent = '0%';
+            }
+        }
+
+        const loadingSubtext = document.querySelector('.loading-subtext');
+        if (loadingSubtext) loadingSubtext.textContent = t.wordlist.firstTimeNote;
+
+        console.log('✅ Translations applied successfully');
+    } catch (error) {
+        console.error('Failed to apply translations:', error);
+    }
+}
 
 /**
  * Initialize the application
@@ -18,6 +69,9 @@ async function init() {
     try {
         // Display version in footer
         displayVersion();
+
+        // Apply translations before loading wordlist
+        await applyTranslations();
 
         // Load the wordlist with progress tracking
         await loadWordlist((percent) => {

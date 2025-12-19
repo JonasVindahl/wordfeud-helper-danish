@@ -3,15 +3,24 @@
  * Provides offline support by caching app resources
  */
 
-// Cache version v34 - Add joker page for offline support
-// Updated: 2025-12-17 - Cache joker page and ensure full offline functionality
-const CACHE_NAME = 'wordfeud-helper-v34-production';
+// Cache version v43 - Multi-language with dynamic translation
+// Updated: 2025-12-18 - Add dynamic text translation via JavaScript
+const CACHE_NAME = 'wordfeud-helper-v43-production';
 
 const STATIC_ASSETS = [
     '/',
     '/index.html',
     '/joker/',
     '/joker/index.html',
+    '/download/',
+    '/download/index.html',
+    '/en/',
+    '/en/index.html',
+    '/en/joker/',
+    '/en/joker/index.html',
+    '/en/download/',
+    '/en/download/index.html',
+    '/en/manifest.json',
     '/assets/styles/styles.css',
     '/src/js/main.js',
     '/src/js/init.js',
@@ -21,8 +30,16 @@ const STATIC_ASSETS = [
     '/src/js/scoring.js',
     '/src/js/utils.js',
     '/src/js/analytics.js',
+    '/src/js/download.js',
+    '/src/js/i18n.js',
     '/src/workers/searchWorker.js',
-    '/public/words.json'
+    '/public/words.json',
+    '/translations/da.json',
+    '/translations/en.json',
+    '/translations/sv.json',
+    '/translations/nl.json',
+    '/translations/no.json',
+    '/translations/pt.json'
 ];
 
 // Install event - cache static assets
@@ -31,9 +48,26 @@ self.addEventListener('install', (event) => {
 
     event.waitUntil(
         caches.open(CACHE_NAME)
-            .then((cache) => {
+            .then(async (cache) => {
                 console.log('📦 Service Worker: Caching static assets');
-                return cache.addAll(STATIC_ASSETS);
+
+                // Cache files individually to avoid one failure breaking everything
+                const cachePromises = STATIC_ASSETS.map(async (url) => {
+                    try {
+                        const response = await fetch(url);
+                        if (response.ok) {
+                            await cache.put(url, response);
+                            console.log('✓ Cached:', url);
+                        } else {
+                            console.warn('⚠️ Failed to cache (status ' + response.status + '):', url);
+                        }
+                    } catch (error) {
+                        console.error('❌ Error caching:', url, error);
+                    }
+                });
+
+                await Promise.all(cachePromises);
+                console.log('✅ Service Worker: All assets cached');
             })
             .then(() => {
                 console.log('✅ Service Worker: Installation complete, force activating...');

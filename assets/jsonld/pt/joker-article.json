@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Curinga Wordfeud \u2013 como usar ? e encontrar as melhores palavras",
+  "description": "Aprenda como funcionam os curingas (?) no Wordfeud: para que podem ser usados, estrat\u00e9gias concretas e exemplos \u2013 e como encontrar palavras com curinga usando o Wordfeud Helper.",
+  "author": {
+    "@type": "Person",
+    "name": "Jonas Vindahl Bang",
+    "url": "https://jonasvindahl.dev/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wordfeud Helper Portugu\u00eas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://wordfeud.jonasvindahl.dev/assets/images/og-image.svg"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://wordfeud.jonasvindahl.dev/pt/joker/"
+  },
+  "inLanguage": "pt-PT",
+  "keywords": "wordfeud curinga, wordfeud pe\u00e7a em branco, curinga wordfeud, scrabble curinga, wordfeud estrat\u00e9gias"
+}

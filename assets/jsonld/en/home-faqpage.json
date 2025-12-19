@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Wordfeud Helper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wordfeud Helper is a free tool that helps you find valid English words in Wordfeud. Enter your letters, use wildcards (?), search with patterns like * and ., and sort words by points and length. The tool is fast, ad-free and optimized for both mobile and tablet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do wildcards work in Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The wildcard (?) can be used as any letter. When you enter your letters, you can use ? to represent a blank tile. For example: if you have the letters TRA?NS, the wildcard will automatically try all possible letters to find valid words like TRAINS, TRAINS, etc."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you search with patterns in Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! You can use patterns to describe words already on the board. Use . for exactly one any letter, and * for 0 or more letters. For example: M* finds words starting with M, and ..A* finds words where the 3rd letter is A."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Wordfeud Helper free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Wordfeud Helper is 100% free. There are no ads, no hidden fees, and you don't need to create an account. The tool also works offline after the first time you've used it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which English words are allowed in Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wordfeud Helper uses a comprehensive English word list with valid words. The word list includes common English words and variations optimized for Wordfeud and Scrabble."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are points calculated in Wordfeud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each letter has a value, and the points are shown for each word in the results. The tool automatically calculates points based on Wordfeud's official point system. You can sort the results by highest points to find the most valuable words."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you collect my data or the words I search for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We only use anonymous statistics to improve the app (e.g. which features are used most). We do NOT store your letters, words or searches. No cookies, no personal data, no cross-site tracking. All data is processed locally in your browser and is never sent to any server."
+      }
+    }
+  ]
+}
